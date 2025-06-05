@@ -6,7 +6,7 @@ This module provides functions to monitor system resource utilization.
 import time
 import threading
 import logging
-from typing import Dict, List, Any, Optional, Callable
+from typing import Dict, List, Any, Optional, Callable, Tuple
 import psutil
 import pandas as pd
 from datetime import datetime

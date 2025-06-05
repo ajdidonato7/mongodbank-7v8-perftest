@@ -8,7 +8,7 @@ from datetime import datetime, date
 import random
 
 from .base_model import BaseModel
-from ..config.test_config import STATUS_VALUES
+from config.test_config import STATUS_VALUES
 
 
 class Customer(BaseModel):

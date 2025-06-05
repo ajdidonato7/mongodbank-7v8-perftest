@@ -10,11 +10,11 @@ from datetime import datetime
 import concurrent.futures
 from tqdm import tqdm
 
-from pymongo import MongoClient, InsertMany
+from pymongo import MongoClient
 from pymongo.errors import BulkWriteError, PyMongoError
 
-from ..config.connection import get_database, with_retry
-from ..config.test_config import COLLECTIONS, DATA_GENERATION, INDEXES
+from config.connection import get_database, with_retry
+from config.test_config import COLLECTIONS, DATA_GENERATION, INDEXES
 from .faker_generator import generate_dataset, generate_batch
 
 # Configure logging

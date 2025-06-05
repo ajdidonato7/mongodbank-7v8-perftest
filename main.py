@@ -6,6 +6,8 @@ This script provides a command-line interface to run performance tests.
 
 import os
 import sys
+# Add the current directory to sys.path to fix import issues
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 import argparse
 import logging
 import json

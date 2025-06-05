@@ -14,15 +14,15 @@ import concurrent.futures
 from pymongo import MongoClient
 from bson import ObjectId
 
-from ..config.connection import get_database, close_connections
-from ..config.test_config import TEST_PARAMETERS, COLLECTIONS
-from ..data_generation import (
+from config.connection import get_database, close_connections
+from config.test_config import TEST_PARAMETERS, COLLECTIONS
+from data_generation import (
     generate_batch,
     get_sample_ids,
     bulk_insert,
     generate_and_load_batch
 )
-from ..utils import (
+from utils import (
     PerformanceMetrics,
     run_with_metrics,
     compare_results,

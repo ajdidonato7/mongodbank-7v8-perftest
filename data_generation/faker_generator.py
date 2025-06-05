@@ -10,8 +10,8 @@ import uuid
 from faker import Faker
 import string
 
-from ..models import Customer, Account, Transaction, Loan
-from ..config.test_config import (
+from models import Customer, Account, Transaction, Loan
+from config.test_config import (
     DATA_GENERATION, ACCOUNT_TYPES, TRANSACTION_TYPES,
     TRANSACTION_CATEGORIES, LOAN_TYPES, STATUS_VALUES, CURRENCIES
 )

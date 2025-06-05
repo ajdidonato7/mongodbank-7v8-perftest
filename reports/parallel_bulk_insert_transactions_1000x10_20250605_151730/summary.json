@@ -1,0 +1,140 @@
+{
+  "test_name": "parallel_bulk_insert_transactions_1000x10",
+  "timestamp": "20250605_151730",
+  "mongodb_v7": {
+    "test_name": "parallel_bulk_insert_transactions_1000x10",
+    "version": "v7",
+    "start_time": "2025-06-05T15:13:19.087397",
+    "end_time": "2025-06-05T15:13:20.969158",
+    "duration": 1.881760835647583,
+    "operations": {
+      "insert": 10000,
+      "find": 0,
+      "update": 0,
+      "delete": 0,
+      "aggregate": 0,
+      "command": 0,
+      "total": 10000
+    },
+    "response_time": {
+      "min": 1.004828929901123,
+      "max": 1.004828929901123,
+      "avg": 1.004828929901123,
+      "median": 1.004828929901123,
+      "p90": 1.004828929901123,
+      "p95": 1.004828929901123,
+      "p99": 1.004828929901123,
+      "std_dev": 0.0
+    },
+    "throughput": {
+      "min": 0,
+      "max": 0,
+      "avg": 0,
+      "final": 0
+    },
+    "resources": {
+      "cpu": {
+        "min": 17.4,
+        "max": 22.5,
+        "avg": 19.95
+      },
+      "memory": {
+        "min": 76.2,
+        "max": 76.2,
+        "avg": 76.2
+      },
+      "disk_io": {
+        "read_min": 0.0,
+        "read_max": 28508.418128230067,
+        "read_avg": 14254.209064115033,
+        "write_min": 0.0,
+        "write_max": 407263.1161175724,
+        "write_avg": 203631.5580587862
+      },
+      "network_io": {
+        "recv_min": 0.0,
+        "recv_max": 149872.03129549298,
+        "recv_avg": 74936.01564774649,
+        "sent_min": 0.0,
+        "sent_max": 2367938.7203979925,
+        "sent_avg": 1183969.3601989963
+      }
+    }
+  },
+  "mongodb_v8": {
+    "test_name": "parallel_bulk_insert_transactions_1000x10",
+    "version": "v8",
+    "start_time": "2025-06-05T15:17:11.694911",
+    "end_time": "2025-06-05T15:17:13.165360",
+    "duration": 1.4704492092132568,
+    "operations": {
+      "insert": 10000,
+      "find": 0,
+      "update": 0,
+      "delete": 0,
+      "aggregate": 0,
+      "command": 0,
+      "total": 10000
+    },
+    "response_time": {
+      "min": 0.5992038249969482,
+      "max": 0.5992038249969482,
+      "avg": 0.5992038249969482,
+      "median": 0.5992038249969482,
+      "p90": 0.5992038249969482,
+      "p95": 0.5992038249969482,
+      "p99": 0.5992038249969482,
+      "std_dev": 0.0
+    },
+    "throughput": {
+      "min": 0,
+      "max": 0,
+      "avg": 0,
+      "final": 0
+    },
+    "resources": {
+      "cpu": {
+        "min": 16.3,
+        "max": 30.9,
+        "avg": 23.6
+      },
+      "memory": {
+        "min": 76.5,
+        "max": 76.9,
+        "avg": 76.7
+      },
+      "disk_io": {
+        "read_min": 0.0,
+        "read_max": 3005426.5314419395,
+        "read_avg": 1502713.2657209698,
+        "write_min": 0.0,
+        "write_max": 1107691.0793390346,
+        "write_avg": 553845.5396695173
+      },
+      "network_io": {
+        "recv_min": 0.0,
+        "recv_max": 197084.56563086907,
+        "recv_avg": 98542.28281543453,
+        "sent_min": 0.0,
+        "sent_max": 2415836.1926100426,
+        "sent_avg": 1207918.0963050213
+      }
+    }
+  },
+  "improvements": {
+    "response_time": {
+      "avg": 40.367578284603034,
+      "median": 40.367578284603034,
+      "p90": 40.367578284603034,
+      "p95": 40.367578284603034,
+      "p99": 40.367578284603034
+    },
+    "throughput": {},
+    "resources": {
+      "cpu_avg": -18.295739348370937,
+      "memory_avg": -0.6561679790026247,
+      "disk_write_avg": -171.98413887774123,
+      "disk_read_avg": 10442.242357761188
+    }
+  }
+}

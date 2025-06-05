@@ -9,7 +9,7 @@ import random
 import uuid
 
 from .base_model import BaseModel
-from ..config.test_config import LOAN_TYPES, STATUS_VALUES, CURRENCIES
+from config.test_config import LOAN_TYPES, STATUS_VALUES, CURRENCIES
 
 
 class LoanPayment:
@@ -148,10 +148,13 @@ class Loan(BaseModel):
             # Only generate payments if loan is active or paid off
             if status in ["ACTIVE", "PAID_OFF"]:
                 # Calculate monthly payment (simple calculation)
-                monthly_payment = amount / term_months
-                
-                # Add interest (simple calculation)
-                monthly_payment *= (1 + (interest_rate / 100))
+                if term_months > 0:
+                    monthly_payment = amount / term_months
+                    # Add interest (simple calculation)
+                    monthly_payment *= (1 + (interest_rate / 100))
+                else:
+                    # For revolving credit (term_months = 0), use a minimum payment
+                    monthly_payment = amount * 0.02  # 2% of balance as minimum payment
                 
                 # Round to 2 decimal places
                 monthly_payment = round(monthly_payment, 2)

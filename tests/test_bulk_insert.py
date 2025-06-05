@@ -9,15 +9,15 @@ from typing import Dict, List, Any, Tuple
 import random
 from concurrent.futures import ThreadPoolExecutor
 
-from ..config.connection import get_database, close_connections
-from ..config.test_config import TEST_PARAMETERS, COLLECTIONS
-from ..data_generation import (
+from config.connection import get_database, close_connections
+from config.test_config import TEST_PARAMETERS, COLLECTIONS
+from data_generation import (
     generate_batch,
     get_sample_ids,
     bulk_insert,
     parallel_bulk_insert
 )
-from ..utils import (
+from utils import (
     PerformanceMetrics,
     run_with_metrics,
     compare_results

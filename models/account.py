@@ -8,7 +8,7 @@ from datetime import datetime
 import random
 
 from .base_model import BaseModel
-from ..config.test_config import ACCOUNT_TYPES, STATUS_VALUES, CURRENCIES
+from config.test_config import ACCOUNT_TYPES, STATUS_VALUES, CURRENCIES
 
 
 class Account(BaseModel):
