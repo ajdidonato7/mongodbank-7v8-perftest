@@ -3,6 +3,11 @@ Aggregation performance tests for MongoDB.
 This module provides functions to test aggregation performance.
 """
 
+import os
+import sys
+# Add the current directory to sys.path to fix import issues
+sys.path.insert(0, os.path.abspath(os.path.dirname(os.path.dirname(__file__))))
+
 import logging
 import time
 import random
