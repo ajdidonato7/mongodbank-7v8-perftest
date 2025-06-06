@@ -53,6 +53,14 @@ pip install -r requirements.txt
 
 ## Usage
 
+### Load Test Data
+
+Load initial test data before running tests:
+
+```
+python main.py --load-data --customer-count 10000
+```
+
 ### Side-by-Side Version Comparison
 
 For direct visual comparison of MongoDB v7.0 and v8.0 performance, use the `compare_versions.py` script:
@@ -103,14 +111,6 @@ python compare_versions.py --bulk-insert --live-plot --open-report
 - `--iterations`: Set number of iterations per test
 - `--live-plot`: Show live plot during tests
 - `--open-report`: Open HTML report after tests complete
-
-### Load Test Data
-
-Load initial test data before running tests:
-
-```
-python main.py --load-data --customer-count 10000
-```
 
 ### Basic Usage
 
