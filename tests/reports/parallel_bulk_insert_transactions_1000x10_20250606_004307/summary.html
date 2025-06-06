@@ -1,0 +1,82 @@
+
+            <html>
+            <head>
+                <title>MongoDB Performance Test: parallel_bulk_insert_transactions_1000x10</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1, h2, h3 { color: #4285f4; }
+                    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                    th { background-color: #f2f2f2; }
+                    tr:nth-child(even) { background-color: #f9f9f9; }
+                    .improvement-positive { color: green; }
+                    .improvement-negative { color: red; }
+                </style>
+            </head>
+            <body>
+                <h1>MongoDB Performance Test Report</h1>
+                <p><strong>Test:</strong> parallel_bulk_insert_transactions_1000x10</p>
+                <p><strong>Date:</strong> 2025-06-06 00:43:07</p>
+                
+                <h2>Summary</h2>
+                <table>
+                    <tr>
+                        <th>Metric</th>
+                        <th>MongoDB v7.0</th>
+                        <th>MongoDB v8.0</th>
+                        <th>Improvement</th>
+                    </tr>
+            
+                    <tr>
+                        <td>Duration (s)</td>
+                        <td>2.51</td>
+                        <td>2.69</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Total Operations</td>
+                        <td>10000</td>
+                        <td>10000</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Avg Response Time (s)</td>
+                        <td>1.673788</td>
+                        <td>1.874161</td>
+                        <td class="improvement-negative">-11.97%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Avg Throughput (ops/s)</td>
+                        <td>0.00</td>
+                        <td>0.00</td>
+                        <td class="improvement-negative">0.00%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Avg CPU Usage (%)</td>
+                        <td>15.10</td>
+                        <td>12.40</td>
+                        <td class="improvement-positive">17.88%</td>
+                    </tr>
+                
+                    <tr>
+                        <td>Avg Memory Usage (%)</td>
+                        <td>77.00</td>
+                        <td>76.77</td>
+                        <td class="improvement-positive">0.30%</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>Overall Improvement</strong></td>
+                        <td></td>
+                        <td></td>
+                        <td class="improvement-negative"><strong>0.00%</strong></td>
+                    </tr>
+                
+                </table>
+            </body>
+            </html>
+            

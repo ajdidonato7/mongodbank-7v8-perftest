@@ -14,12 +14,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # MongoDB connection strings
-MONGO_V7_URI = os.getenv("MONGO_V7_URI", "mongodb+srv://ajdidonato7:ajpassword@cluster1.kzvgk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1")
-MONGO_V8_URI = os.getenv("MONGO_V8_URI", "mongodb+srv://ajdidonato7:ajpassword@ajcluster.kzvgk.mongodb.net/?retryWrites=true&w=majority&appName=AJCluster")
+MONGO_V7_URI = os.getenv("MONGO_V7_URI", "TODO - MONGODB V7 CONNECTION STRING")
+MONGO_V8_URI = os.getenv("MONGO_V8_URI", "TODO - MONGODB V8 CONNECTION STRING")
 
 # Database names
-MONGO_V7_DB = os.getenv("MONGO_V7_DB", "banking")
-MONGO_V8_DB = os.getenv("MONGO_V8_DB", "banking")
+MONGO_V7_DB = os.getenv("MONGO_V7_DB", "TODO - MONGODB V7 DATABASE NAME")
+MONGO_V8_DB = os.getenv("MONGO_V8_DB", "TODO - MONGODB V8 DATABASE NAME")
 
 # Connection timeouts
 CONNECTION_TIMEOUT_MS = 5000

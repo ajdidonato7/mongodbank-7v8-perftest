@@ -1,0 +1,1966 @@
+{
+  "v7": {
+    "Bulk Insert customers (batch: 100)": {
+      "test_name": "bulk_insert_customers_100",
+      "version": "v7",
+      "collection_name": "customers",
+      "batch_size": 100,
+      "iterations": 3,
+      "total_documents": 300,
+      "total_time": 1.0462572574615479,
+      "avg_throughput": 286.7363622670265,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 100,
+          "time": 0.8955709934234619,
+          "throughput": 111.66060617677462
+        },
+        {
+          "iteration": 2,
+          "documents": 100,
+          "time": 0.0773930549621582,
+          "throughput": 1292.1056036474538
+        },
+        {
+          "iteration": 3,
+          "documents": 100,
+          "time": 0.07329320907592773,
+          "throughput": 1364.3828843188664
+        }
+      ]
+    },
+    "Bulk Insert customers (batch: 1000)": {
+      "test_name": "bulk_insert_customers_1000",
+      "version": "v7",
+      "collection_name": "customers",
+      "batch_size": 1000,
+      "iterations": 3,
+      "total_documents": 1489,
+      "total_time": 0.9884436130523682,
+      "avg_throughput": 1506.4086411584838,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 1000,
+          "time": 0.36975574493408203,
+          "throughput": 2704.488067327458
+        },
+        {
+          "iteration": 2,
+          "documents": 404,
+          "time": 0.28859591484069824,
+          "throughput": 1399.8812153075817
+        },
+        {
+          "iteration": 3,
+          "documents": 85,
+          "time": 0.3300919532775879,
+          "throughput": 257.5040050386203
+        }
+      ]
+    },
+    "Bulk Insert customers (batch: 10000)": {
+      "test_name": "bulk_insert_customers_10000",
+      "version": "v7",
+      "collection_name": "customers",
+      "batch_size": 10000,
+      "iterations": 3,
+      "total_documents": 3652,
+      "total_time": 7.145420074462891,
+      "avg_throughput": 511.0966132070989,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 990,
+          "time": 3.258186101913452,
+          "throughput": 303.85004693826346
+        },
+        {
+          "iteration": 2,
+          "documents": 2305,
+          "time": 1.8491840362548828,
+          "throughput": 1246.4957272009942
+        },
+        {
+          "iteration": 3,
+          "documents": 357,
+          "time": 2.0380499362945557,
+          "throughput": 175.16744493958436
+        }
+      ]
+    },
+    "Bulk Insert accounts (batch: 100)": {
+      "test_name": "bulk_insert_accounts_100",
+      "version": "v7",
+      "collection_name": "accounts",
+      "batch_size": 100,
+      "iterations": 3,
+      "total_documents": 300,
+      "total_time": 0.16558098793029785,
+      "avg_throughput": 1811.802210808686,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 100,
+          "time": 0.05412602424621582,
+          "throughput": 1847.5400954096758
+        },
+        {
+          "iteration": 2,
+          "documents": 100,
+          "time": 0.058779001235961914,
+          "throughput": 1701.2878391478764
+        },
+        {
+          "iteration": 3,
+          "documents": 100,
+          "time": 0.05267596244812012,
+          "throughput": 1898.399105635492
+        }
+      ]
+    },
+    "Bulk Insert accounts (batch: 1000)": {
+      "test_name": "bulk_insert_accounts_1000",
+      "version": "v7",
+      "collection_name": "accounts",
+      "batch_size": 1000,
+      "iterations": 3,
+      "total_documents": 3000,
+      "total_time": 0.6811051368713379,
+      "avg_throughput": 4404.606334024325,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 1000,
+          "time": 0.2714989185333252,
+          "throughput": 3683.25592382518
+        },
+        {
+          "iteration": 2,
+          "documents": 1000,
+          "time": 0.22345709800720215,
+          "throughput": 4475.131955610421
+        },
+        {
+          "iteration": 3,
+          "documents": 1000,
+          "time": 0.18614912033081055,
+          "throughput": 5372.0372044889245
+        }
+      ]
+    },
+    "Bulk Insert accounts (batch: 10000)": {
+      "test_name": "bulk_insert_accounts_10000",
+      "version": "v7",
+      "collection_name": "accounts",
+      "batch_size": 10000,
+      "iterations": 3,
+      "total_documents": 30000,
+      "total_time": 7.543023109436035,
+      "avg_throughput": 3977.1852166899953,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 10000,
+          "time": 2.982590913772583,
+          "throughput": 3352.7896681450434
+        },
+        {
+          "iteration": 2,
+          "documents": 10000,
+          "time": 3.050455093383789,
+          "throughput": 3278.1993813609183
+        },
+        {
+          "iteration": 3,
+          "documents": 10000,
+          "time": 1.509977102279663,
+          "throughput": 6622.61698200765
+        }
+      ]
+    },
+    "Bulk Insert transactions (batch: 100)": {
+      "test_name": "bulk_insert_transactions_100",
+      "version": "v7",
+      "collection_name": "transactions",
+      "batch_size": 100,
+      "iterations": 3,
+      "total_documents": 300,
+      "total_time": 0.21999478340148926,
+      "avg_throughput": 1363.668698691376,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 100,
+          "time": 0.07619285583496094,
+          "throughput": 1312.4590081858462
+        },
+        {
+          "iteration": 2,
+          "documents": 100,
+          "time": 0.0655519962310791,
+          "throughput": 1525.506555856626
+        },
+        {
+          "iteration": 3,
+          "documents": 100,
+          "time": 0.07824993133544922,
+          "throughput": 1277.956392975101
+        }
+      ]
+    },
+    "Bulk Insert transactions (batch: 1000)": {
+      "test_name": "bulk_insert_transactions_1000",
+      "version": "v7",
+      "collection_name": "transactions",
+      "batch_size": 1000,
+      "iterations": 3,
+      "total_documents": 3000,
+      "total_time": 1.1948394775390625,
+      "avg_throughput": 2510.7975225081414,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 1000,
+          "time": 0.4227759838104248,
+          "throughput": 2365.3188409311483
+        },
+        {
+          "iteration": 2,
+          "documents": 1000,
+          "time": 0.43432021141052246,
+          "throughput": 2302.4486858494206
+        },
+        {
+          "iteration": 3,
+          "documents": 1000,
+          "time": 0.33774328231811523,
+          "throughput": 2960.828689578836
+        }
+      ]
+    },
+    "Bulk Insert transactions (batch: 10000)": {
+      "test_name": "bulk_insert_transactions_10000",
+      "version": "v7",
+      "collection_name": "transactions",
+      "batch_size": 10000,
+      "iterations": 3,
+      "total_documents": 30000,
+      "total_time": 8.732594013214111,
+      "avg_throughput": 3435.405327970609,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 10000,
+          "time": 3.5344772338867188,
+          "throughput": 2829.272715106277
+        },
+        {
+          "iteration": 2,
+          "documents": 10000,
+          "time": 3.015012741088867,
+          "throughput": 3316.735569213056
+        },
+        {
+          "iteration": 3,
+          "documents": 10000,
+          "time": 2.1831040382385254,
+          "throughput": 4580.6337329065955
+        }
+      ]
+    },
+    "Bulk Insert loans (batch: 100)": {
+      "test_name": "bulk_insert_loans_100",
+      "version": "v7",
+      "collection_name": "loans",
+      "batch_size": 100,
+      "iterations": 3,
+      "total_documents": 300,
+      "total_time": 2.9267733097076416,
+      "avg_throughput": 102.50195975374919,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 100,
+          "time": 1.4511899948120117,
+          "throughput": 68.90896461352331
+        },
+        {
+          "iteration": 2,
+          "documents": 100,
+          "time": 0.8734891414642334,
+          "throughput": 114.48339224042282
+        },
+        {
+          "iteration": 3,
+          "documents": 100,
+          "time": 0.6020941734313965,
+          "throughput": 166.08697511568622
+        }
+      ]
+    },
+    "Bulk Insert loans (batch: 1000)": {
+      "test_name": "bulk_insert_loans_1000",
+      "version": "v7",
+      "collection_name": "loans",
+      "batch_size": 1000,
+      "iterations": 3,
+      "total_documents": 3000,
+      "total_time": 26.589295625686646,
+      "avg_throughput": 112.82735888279205,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 1000,
+          "time": 8.884223937988281,
+          "throughput": 112.55907178612128
+        },
+        {
+          "iteration": 2,
+          "documents": 1000,
+          "time": 8.66345477104187,
+          "throughput": 115.42739316220147
+        },
+        {
+          "iteration": 3,
+          "documents": 1000,
+          "time": 9.041616916656494,
+          "throughput": 110.59968689425416
+        }
+      ]
+    },
+    "Bulk Insert loans (batch: 10000)": {
+      "test_name": "bulk_insert_loans_10000",
+      "version": "v7",
+      "collection_name": "loans",
+      "batch_size": 10000,
+      "iterations": 3,
+      "total_documents": 30000,
+      "total_time": 260.08109974861145,
+      "avg_throughput": 115.34863559480995,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 10000,
+          "time": 89.16218185424805,
+          "throughput": 112.15517377476064
+        },
+        {
+          "iteration": 2,
+          "documents": 10000,
+          "time": 86.06250596046448,
+          "throughput": 116.19461795121113
+        },
+        {
+          "iteration": 3,
+          "documents": 10000,
+          "time": 84.85641193389893,
+          "throughput": 117.84613292145508
+        }
+      ]
+    },
+    "Single Read customers": {
+      "test_name": "single_read_customers",
+      "version": "v7",
+      "collection_name": "customers",
+      "read_type": "single",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.931363582611084,
+      "avg_throughput": 30.20733230684181,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.2923152446746826,
+          "throughput": 30.37376210001455
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.310373067855835,
+          "throughput": 30.208075630814353
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.3286752700805664,
+          "throughput": 30.04198123464883
+        }
+      ]
+    },
+    "Filtered Read customers": {
+      "test_name": "filtered_read_customers",
+      "version": "v7",
+      "collection_name": "customers",
+      "read_type": "filtered",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.977651119232178,
+      "avg_throughput": 27.32825052842299,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.678521156311035,
+          "throughput": 27.184837534082288
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.5148448944091797,
+          "throughput": 28.450757573702063
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.784285068511963,
+          "throughput": 26.42507057200146
+        }
+      ]
+    },
+    "Complex Read customers": {
+      "test_name": "complex_read_customers",
+      "version": "v7",
+      "collection_name": "customers",
+      "read_type": "complex",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.787822008132935,
+      "avg_throughput": 27.80913513161694,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.6371660232543945,
+          "throughput": 27.493933287797486
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.6105308532714844,
+          "throughput": 27.696758195374645
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.5401251316070557,
+          "throughput": 28.247589077339917
+        }
+      ]
+    },
+    "Single Read accounts": {
+      "test_name": "single_read_accounts",
+      "version": "v7",
+      "collection_name": "accounts",
+      "read_type": "single",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.238079071044922,
+      "avg_throughput": 29.302371852982898,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.569911003112793,
+          "throughput": 28.011902793320267
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.279127836227417,
+          "throughput": 30.49591385099776
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.389040231704712,
+          "throughput": 29.506878987299384
+        }
+      ]
+    },
+    "Filtered Read accounts": {
+      "test_name": "filtered_read_accounts",
+      "version": "v7",
+      "collection_name": "accounts",
+      "read_type": "filtered",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.286346912384033,
+      "avg_throughput": 29.164872870350237,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.38747501373291,
+          "throughput": 29.52051294684018
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.4041152000427246,
+          "throughput": 29.37620912439888
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.4947566986083984,
+          "throughput": 28.614295249743623
+        }
+      ]
+    },
+    "Complex Read accounts": {
+      "test_name": "complex_read_accounts",
+      "version": "v7",
+      "collection_name": "accounts",
+      "read_type": "complex",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.91824984550476,
+      "avg_throughput": 27.47693121563026,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.5362648963928223,
+          "throughput": 28.278424532620647
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.7441329956054688,
+          "throughput": 26.70845296290787
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.6378519535064697,
+          "throughput": 27.48874920641329
+        }
+      ]
+    },
+    "Single Read transactions": {
+      "test_name": "single_read_transactions",
+      "version": "v7",
+      "collection_name": "transactions",
+      "read_type": "single",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.991340160369873,
+      "avg_throughput": 30.02600203623677,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.314971923828125,
+          "throughput": 30.166168009205983
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.3323471546173096,
+          "throughput": 30.008878235102163
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.3440210819244385,
+          "throughput": 29.90411769247919
+        }
+      ]
+    },
+    "Filtered Read transactions": {
+      "test_name": "filtered_read_transactions",
+      "version": "v7",
+      "collection_name": "transactions",
+      "read_type": "filtered",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.88790249824524,
+      "avg_throughput": 30.340104997317646,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.269742012023926,
+          "throughput": 30.58345264925087
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.2935101985931396,
+          "throughput": 30.362741868149108
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.324650287628174,
+          "throughput": 30.078351510269858
+        }
+      ]
+    },
+    "Complex Read transactions": {
+      "test_name": "complex_read_transactions",
+      "version": "v7",
+      "collection_name": "transactions",
+      "read_type": "complex",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.255331039428711,
+      "avg_throughput": 29.253078115819843,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.379763126373291,
+          "throughput": 29.58787236290923
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.4585421085357666,
+          "throughput": 28.913917154050996
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.4170258045196533,
+          "throughput": 29.265216513065653
+        }
+      ]
+    },
+    "Single Read loans": {
+      "test_name": "single_read_loans",
+      "version": "v7",
+      "collection_name": "loans",
+      "read_type": "single",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 11.341867685317993,
+      "avg_throughput": 26.450670059248612,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.7356176376342773,
+          "throughput": 26.769335007029472
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.8159050941467285,
+          "throughput": 26.206102492798216
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.7903449535369873,
+          "throughput": 26.382822995222188
+        }
+      ]
+    },
+    "Filtered Read loans": {
+      "test_name": "filtered_read_loans",
+      "version": "v7",
+      "collection_name": "loans",
+      "read_type": "filtered",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.1388840675354,
+      "avg_throughput": 29.589055166396154,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.488570213317871,
+          "throughput": 28.665038650574584
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.362416982650757,
+          "throughput": 29.740511220343986
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.2878968715667725,
+          "throughput": 30.414579260312163
+        }
+      ]
+    },
+    "Complex Read loans": {
+      "test_name": "complex_read_loans",
+      "version": "v7",
+      "collection_name": "loans",
+      "read_type": "complex",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 18.234970092773438,
+      "avg_throughput": 16.45190523887345,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 6.574671030044556,
+          "throughput": 15.209886478429981
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 5.866381883621216,
+          "throughput": 17.046282015699894
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 5.793917179107666,
+          "throughput": 17.259480401375228
+        }
+      ]
+    },
+    "Simple Aggregation customers": {
+      "test_name": "simple_aggregation_customers",
+      "version": "v7",
+      "collection_name": "customers",
+      "agg_type": "simple",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 5.617525815963745,
+      "avg_throughput": 5.340429395935617,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 1.9239890575408936,
+          "throughput": 5.197534757698306
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 1.837981939315796,
+          "throughput": 5.440749871417443
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 1.8555548191070557,
+          "throughput": 5.389223695806668
+        }
+      ]
+    },
+    "Group_by Aggregation customers": {
+      "test_name": "group_by_aggregation_customers",
+      "version": "v7",
+      "collection_name": "customers",
+      "agg_type": "group_by",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 29.602508544921875,
+      "avg_throughput": 1.0134276274078236,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 11.113888025283813,
+          "throughput": 0.8997751261529947
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 8.53476619720459,
+          "throughput": 1.1716782591273938
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 9.953854322433472,
+          "throughput": 1.0046359607114732
+        }
+      ]
+    },
+    "Simple Aggregation accounts": {
+      "test_name": "simple_aggregation_accounts",
+      "version": "v7",
+      "collection_name": "accounts",
+      "agg_type": "simple",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 6.371500253677368,
+      "avg_throughput": 4.708467206398561,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 2.1635971069335938,
+          "throughput": 4.621932599167098
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 2.116190195083618,
+          "throughput": 4.725473174968975
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 2.0917129516601562,
+          "throughput": 4.780770703773276
+        }
+      ]
+    },
+    "Group_by Aggregation accounts": {
+      "test_name": "group_by_aggregation_accounts",
+      "version": "v7",
+      "collection_name": "accounts",
+      "agg_type": "group_by",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 8.933762550354004,
+      "avg_throughput": 3.3580476121800706,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 2.9911627769470215,
+          "throughput": 3.3431814801488877
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 2.971313714981079,
+          "throughput": 3.365514704684651
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 2.9712860584259033,
+          "throughput": 3.365546030696787
+        }
+      ]
+    },
+    "Simple Aggregation transactions": {
+      "test_name": "simple_aggregation_transactions",
+      "version": "v7",
+      "collection_name": "transactions",
+      "agg_type": "simple",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 52.03205227851868,
+      "avg_throughput": 0.5765676863832918,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 18.03005623817444,
+          "throughput": 0.5546294403024286
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 16.98765802383423,
+          "throughput": 0.5886626623852258
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 17.01433801651001,
+          "throughput": 0.5877395870645342
+        }
+      ]
+    },
+    "Group_by Aggregation transactions": {
+      "test_name": "group_by_aggregation_transactions",
+      "version": "v7",
+      "collection_name": "transactions",
+      "agg_type": "group_by",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 77.96256709098816,
+      "avg_throughput": 0.3848000536589278,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 25.836027145385742,
+          "throughput": 0.38705641326847645
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 26.150919914245605,
+          "throughput": 0.3823957257638398
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 25.97562003135681,
+          "throughput": 0.3849763735351983
+        }
+      ]
+    },
+    "Simple Aggregation loans": {
+      "test_name": "simple_aggregation_loans",
+      "version": "v7",
+      "collection_name": "loans",
+      "agg_type": "simple",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 23.79810380935669,
+      "avg_throughput": 1.2606046364166592,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 10.608672857284546,
+          "throughput": 0.9426249762366274
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 6.621043920516968,
+          "throughput": 1.5103358503653008
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 6.568387031555176,
+          "throughput": 1.5224437829194624
+        }
+      ]
+    },
+    "Group_by Aggregation loans": {
+      "test_name": "group_by_aggregation_loans",
+      "version": "v7",
+      "collection_name": "loans",
+      "agg_type": "group_by",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 21.65562915802002,
+      "avg_throughput": 1.3853210997053713,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 7.368674993515015,
+          "throughput": 1.3570960869899606
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 6.869035959243774,
+          "throughput": 1.4558083636966315
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 7.4179182052612305,
+          "throughput": 1.3480871213850003
+        }
+      ]
+    }
+  },
+  "v8": {
+    "Bulk Insert customers (batch: 100)": {
+      "test_name": "bulk_insert_customers_100",
+      "version": "v8",
+      "collection_name": "customers",
+      "batch_size": 100,
+      "iterations": 3,
+      "total_documents": 300,
+      "total_time": 0.9993879795074463,
+      "avg_throughput": 300.18371858730643,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 100,
+          "time": 0.882957935333252,
+          "throughput": 113.25567843983114
+        },
+        {
+          "iteration": 2,
+          "documents": 100,
+          "time": 0.05783987045288086,
+          "throughput": 1728.9112028953248
+        },
+        {
+          "iteration": 3,
+          "documents": 100,
+          "time": 0.05859017372131348,
+          "throughput": 1706.7708396915502
+        }
+      ]
+    },
+    "Bulk Insert customers (batch: 1000)": {
+      "test_name": "bulk_insert_customers_1000",
+      "version": "v8",
+      "collection_name": "customers",
+      "batch_size": 1000,
+      "iterations": 3,
+      "total_documents": 1577,
+      "total_time": 0.8833239078521729,
+      "avg_throughput": 1785.3020686766197,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 97,
+          "time": 0.2617638111114502,
+          "throughput": 370.56306442108104
+        },
+        {
+          "iteration": 2,
+          "documents": 570,
+          "time": 0.2631371021270752,
+          "throughput": 2166.171153335623
+        },
+        {
+          "iteration": 3,
+          "documents": 910,
+          "time": 0.35842299461364746,
+          "throughput": 2538.8996065414563
+        }
+      ]
+    },
+    "Bulk Insert customers (batch: 10000)": {
+      "test_name": "bulk_insert_customers_10000",
+      "version": "v8",
+      "collection_name": "customers",
+      "batch_size": 10000,
+      "iterations": 3,
+      "total_documents": 2630,
+      "total_time": 5.971492052078247,
+      "avg_throughput": 440.4259399599613,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 1483,
+          "time": 1.7806129455566406,
+          "throughput": 832.8592711294687
+        },
+        {
+          "iteration": 2,
+          "documents": 295,
+          "time": 2.4270381927490234,
+          "throughput": 121.54732499939095
+        },
+        {
+          "iteration": 3,
+          "documents": 852,
+          "time": 1.763840913772583,
+          "throughput": 483.0367599182762
+        }
+      ]
+    },
+    "Bulk Insert accounts (batch: 100)": {
+      "test_name": "bulk_insert_accounts_100",
+      "version": "v8",
+      "collection_name": "accounts",
+      "batch_size": 100,
+      "iterations": 3,
+      "total_documents": 300,
+      "total_time": 0.16800594329833984,
+      "avg_throughput": 1785.6511151350708,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 100,
+          "time": 0.05869579315185547,
+          "throughput": 1703.6996116788796
+        },
+        {
+          "iteration": 2,
+          "documents": 100,
+          "time": 0.06425118446350098,
+          "throughput": 1556.3915410276486
+        },
+        {
+          "iteration": 3,
+          "documents": 100,
+          "time": 0.0450589656829834,
+          "throughput": 2219.314147234524
+        }
+      ]
+    },
+    "Bulk Insert accounts (batch: 1000)": {
+      "test_name": "bulk_insert_accounts_1000",
+      "version": "v8",
+      "collection_name": "accounts",
+      "batch_size": 1000,
+      "iterations": 3,
+      "total_documents": 3000,
+      "total_time": 0.559074878692627,
+      "avg_throughput": 5366.007514083576,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 1000,
+          "time": 0.21009206771850586,
+          "throughput": 4759.817973422304
+        },
+        {
+          "iteration": 2,
+          "documents": 1000,
+          "time": 0.15620875358581543,
+          "throughput": 6401.689899219612
+        },
+        {
+          "iteration": 3,
+          "documents": 1000,
+          "time": 0.19277405738830566,
+          "throughput": 5187.419995968106
+        }
+      ]
+    },
+    "Bulk Insert accounts (batch: 10000)": {
+      "test_name": "bulk_insert_accounts_10000",
+      "version": "v8",
+      "collection_name": "accounts",
+      "batch_size": 10000,
+      "iterations": 3,
+      "total_documents": 30000,
+      "total_time": 5.670639276504517,
+      "avg_throughput": 5290.408812336329,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 10000,
+          "time": 2.5562191009521484,
+          "throughput": 3912.0277273083393
+        },
+        {
+          "iteration": 2,
+          "documents": 10000,
+          "time": 1.4428391456604004,
+          "throughput": 6930.779519031493
+        },
+        {
+          "iteration": 3,
+          "documents": 10000,
+          "time": 1.6715810298919678,
+          "throughput": 5982.360305109641
+        }
+      ]
+    },
+    "Bulk Insert transactions (batch: 100)": {
+      "test_name": "bulk_insert_transactions_100",
+      "version": "v8",
+      "collection_name": "transactions",
+      "batch_size": 100,
+      "iterations": 3,
+      "total_documents": 300,
+      "total_time": 0.2454359531402588,
+      "avg_throughput": 1222.3148082488126,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 100,
+          "time": 0.07937908172607422,
+          "throughput": 1259.777737730522
+        },
+        {
+          "iteration": 2,
+          "documents": 100,
+          "time": 0.07747292518615723,
+          "throughput": 1290.7735155180108
+        },
+        {
+          "iteration": 3,
+          "documents": 100,
+          "time": 0.08858394622802734,
+          "throughput": 1128.872716311217
+        }
+      ]
+    },
+    "Bulk Insert transactions (batch: 1000)": {
+      "test_name": "bulk_insert_transactions_1000",
+      "version": "v8",
+      "collection_name": "transactions",
+      "batch_size": 1000,
+      "iterations": 3,
+      "total_documents": 3000,
+      "total_time": 0.7065067291259766,
+      "avg_throughput": 4246.244057309003,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 1000,
+          "time": 0.26554274559020996,
+          "throughput": 3765.872036072177
+        },
+        {
+          "iteration": 2,
+          "documents": 1000,
+          "time": 0.21377897262573242,
+          "throughput": 4677.728532968124
+        },
+        {
+          "iteration": 3,
+          "documents": 1000,
+          "time": 0.22718501091003418,
+          "throughput": 4401.698844454146
+        }
+      ]
+    },
+    "Bulk Insert transactions (batch: 10000)": {
+      "test_name": "bulk_insert_transactions_10000",
+      "version": "v8",
+      "collection_name": "transactions",
+      "batch_size": 10000,
+      "iterations": 3,
+      "total_documents": 30000,
+      "total_time": 5.389166831970215,
+      "avg_throughput": 5566.723194025218,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 10000,
+          "time": 1.6991732120513916,
+          "throughput": 5885.215191173546
+        },
+        {
+          "iteration": 2,
+          "documents": 10000,
+          "time": 1.650000810623169,
+          "throughput": 6060.603083111953
+        },
+        {
+          "iteration": 3,
+          "documents": 10000,
+          "time": 2.0399928092956543,
+          "throughput": 4901.9780630759615
+        }
+      ]
+    },
+    "Bulk Insert loans (batch: 100)": {
+      "test_name": "bulk_insert_loans_100",
+      "version": "v8",
+      "collection_name": "loans",
+      "batch_size": 100,
+      "iterations": 3,
+      "total_documents": 300,
+      "total_time": 1.8806324005126953,
+      "avg_throughput": 159.52080795705447,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 100,
+          "time": 0.6406490802764893,
+          "throughput": 156.09169368797396
+        },
+        {
+          "iteration": 2,
+          "documents": 100,
+          "time": 0.6466271877288818,
+          "throughput": 154.6486165408932
+        },
+        {
+          "iteration": 3,
+          "documents": 100,
+          "time": 0.5933561325073242,
+          "throughput": 168.53284987117854
+        }
+      ]
+    },
+    "Bulk Insert loans (batch: 1000)": {
+      "test_name": "bulk_insert_loans_1000",
+      "version": "v8",
+      "collection_name": "loans",
+      "batch_size": 1000,
+      "iterations": 3,
+      "total_documents": 3000,
+      "total_time": 25.323174953460693,
+      "avg_throughput": 118.46855718184803,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 1000,
+          "time": 8.51720905303955,
+          "throughput": 117.40935249712209
+        },
+        {
+          "iteration": 2,
+          "documents": 1000,
+          "time": 8.91765308380127,
+          "throughput": 112.1371274036752
+        },
+        {
+          "iteration": 3,
+          "documents": 1000,
+          "time": 7.888312816619873,
+          "throughput": 126.7698205239911
+        }
+      ]
+    },
+    "Bulk Insert loans (batch: 10000)": {
+      "test_name": "bulk_insert_loans_10000",
+      "version": "v8",
+      "collection_name": "loans",
+      "batch_size": 10000,
+      "iterations": 3,
+      "total_documents": 30000,
+      "total_time": 261.32071018218994,
+      "avg_throughput": 114.80146360800997,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "documents": 10000,
+          "time": 83.01116895675659,
+          "throughput": 120.46571715198166
+        },
+        {
+          "iteration": 2,
+          "documents": 10000,
+          "time": 86.99016809463501,
+          "throughput": 114.95551990566547
+        },
+        {
+          "iteration": 3,
+          "documents": 10000,
+          "time": 91.31937313079834,
+          "throughput": 109.5057889378722
+        }
+      ]
+    },
+    "Single Read customers": {
+      "test_name": "single_read_customers",
+      "version": "v8",
+      "collection_name": "customers",
+      "read_type": "single",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.368933916091919,
+      "avg_throughput": 32.020718972595716,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.117003917694092,
+          "throughput": 32.082089930120574
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.1163768768310547,
+          "throughput": 32.08854511258178
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.1355531215667725,
+          "throughput": 31.892299738819933
+        }
+      ]
+    },
+    "Filtered Read customers": {
+      "test_name": "filtered_read_customers",
+      "version": "v8",
+      "collection_name": "customers",
+      "read_type": "filtered",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.530235290527344,
+      "avg_throughput": 28.489391900850517,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.433544397354126,
+          "throughput": 29.12442316955609
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.3203608989715576,
+          "throughput": 30.117208051381947
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.77632999420166,
+          "throughput": 26.480736628828602
+        }
+      ]
+    },
+    "Complex Read customers": {
+      "test_name": "complex_read_customers",
+      "version": "v8",
+      "collection_name": "customers",
+      "read_type": "complex",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.413259744644165,
+      "avg_throughput": 28.80942253978621,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.4862568378448486,
+          "throughput": 28.68405991046216
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.4860777854919434,
+          "throughput": 28.685533184649906
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.440925121307373,
+          "throughput": 29.06195179336108
+        }
+      ]
+    },
+    "Single Read accounts": {
+      "test_name": "single_read_accounts",
+      "version": "v8",
+      "collection_name": "accounts",
+      "read_type": "single",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.78153944015503,
+      "avg_throughput": 30.670018951050228,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.369647979736328,
+          "throughput": 29.67669044403413
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.185859203338623,
+          "throughput": 31.38870666199088
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.226032257080078,
+          "throughput": 30.997830161348492
+        }
+      ]
+    },
+    "Filtered Read accounts": {
+      "test_name": "filtered_read_accounts",
+      "version": "v8",
+      "collection_name": "accounts",
+      "read_type": "filtered",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.663666486740112,
+      "avg_throughput": 31.0441177178084,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.188815116882324,
+          "throughput": 31.35961049311918
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.244551181793213,
+          "throughput": 30.82090384677845
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.230300188064575,
+          "throughput": 30.95687526796533
+        }
+      ]
+    },
+    "Complex Read accounts": {
+      "test_name": "complex_read_accounts",
+      "version": "v8",
+      "collection_name": "accounts",
+      "read_type": "complex",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.403291940689087,
+      "avg_throughput": 28.83702598277068,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.3403048515319824,
+          "throughput": 29.9373872879107
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.6507811546325684,
+          "throughput": 27.391398104788472
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.412205934524536,
+          "throughput": 29.30655473874094
+        }
+      ]
+    },
+    "Single Read transactions": {
+      "test_name": "single_read_transactions",
+      "version": "v8",
+      "collection_name": "transactions",
+      "read_type": "single",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.323912143707275,
+      "avg_throughput": 32.175335350244644,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.12221622467041,
+          "throughput": 32.02853127526627
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.069066047668457,
+          "throughput": 32.5832023315266
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.132629871368408,
+          "throughput": 31.922060411279162
+        }
+      ]
+    },
+    "Filtered Read transactions": {
+      "test_name": "filtered_read_transactions",
+      "version": "v8",
+      "collection_name": "transactions",
+      "read_type": "filtered",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.400954961776733,
+      "avg_throughput": 31.911651658769514,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.0802829265594482,
+          "throughput": 32.46455029755853
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.165626049041748,
+          "throughput": 31.589328129982547
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.155045986175537,
+          "throughput": 31.695259098653374
+        }
+      ]
+    },
+    "Complex Read transactions": {
+      "test_name": "complex_read_transactions",
+      "version": "v8",
+      "collection_name": "transactions",
+      "read_type": "complex",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.61380386352539,
+      "avg_throughput": 31.20513006700656,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.1737678050994873,
+          "throughput": 31.508291135641326
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.332991123199463,
+          "throughput": 30.003080207428294
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.1070449352264404,
+          "throughput": 32.184922357008666
+        }
+      ]
+    },
+    "Single Read loans": {
+      "test_name": "single_read_loans",
+      "version": "v8",
+      "collection_name": "loans",
+      "read_type": "single",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 10.97408676147461,
+      "avg_throughput": 27.337126680387975,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.5570318698883057,
+          "throughput": 28.11332696975248
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.741971015930176,
+          "throughput": 26.723884170744196
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.675083875656128,
+          "throughput": 27.210263325526572
+        }
+      ]
+    },
+    "Filtered Read loans": {
+      "test_name": "filtered_read_loans",
+      "version": "v8",
+      "collection_name": "loans",
+      "read_type": "filtered",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 9.530923843383789,
+      "avg_throughput": 31.476486952338316,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 3.2317938804626465,
+          "throughput": 30.942567409554144
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 3.211887836456299,
+          "throughput": 31.134337527281396
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 3.0872421264648438,
+          "throughput": 32.391369352849736
+        }
+      ]
+    },
+    "Complex Read loans": {
+      "test_name": "complex_read_loans",
+      "version": "v8",
+      "collection_name": "loans",
+      "read_type": "complex",
+      "num_reads": 100,
+      "iterations": 3,
+      "total_reads": 300,
+      "total_time": 15.217308044433594,
+      "avg_throughput": 19.71439357894436,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "reads": 100,
+          "time": 5.267664909362793,
+          "throughput": 18.98374359809014
+        },
+        {
+          "iteration": 2,
+          "reads": 100,
+          "time": 4.607246160507202,
+          "throughput": 21.704939678975435
+        },
+        {
+          "iteration": 3,
+          "reads": 100,
+          "time": 5.342396974563599,
+          "throughput": 18.718189695772026
+        }
+      ]
+    },
+    "Simple Aggregation customers": {
+      "test_name": "simple_aggregation_customers",
+      "version": "v8",
+      "collection_name": "customers",
+      "agg_type": "simple",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 3.1283907890319824,
+      "avg_throughput": 9.58959478629679,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 1.0912480354309082,
+          "throughput": 9.163819475790612
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 1.046839952468872,
+          "throughput": 9.552558608807349
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 0.9903028011322021,
+          "throughput": 10.097921553455278
+        }
+      ]
+    },
+    "Group_by Aggregation customers": {
+      "test_name": "group_by_aggregation_customers",
+      "version": "v8",
+      "collection_name": "customers",
+      "agg_type": "group_by",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 24.02530527114868,
+      "avg_throughput": 1.248683405327056,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 7.213007211685181,
+          "throughput": 1.3863843063680636
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 7.757986068725586,
+          "throughput": 1.2889943229355028
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 9.054311990737915,
+          "throughput": 1.1044461478938956
+        }
+      ]
+    },
+    "Simple Aggregation accounts": {
+      "test_name": "simple_aggregation_accounts",
+      "version": "v8",
+      "collection_name": "accounts",
+      "agg_type": "simple",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 3.2277872562408447,
+      "avg_throughput": 9.29429284473311,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 1.1543309688568115,
+          "throughput": 8.663026696670428
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 1.049226999282837,
+          "throughput": 9.530826033675417
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 1.0242292881011963,
+          "throughput": 9.763438827783235
+        }
+      ]
+    },
+    "Group_by Aggregation accounts": {
+      "test_name": "group_by_aggregation_accounts",
+      "version": "v8",
+      "collection_name": "accounts",
+      "agg_type": "group_by",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 5.128319978713989,
+      "avg_throughput": 5.849868987216159,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 1.6895098686218262,
+          "throughput": 5.918876347349921
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 1.750244140625,
+          "throughput": 5.713488631608314
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 1.688565969467163,
+          "throughput": 5.922184966901565
+        }
+      ]
+    },
+    "Simple Aggregation transactions": {
+      "test_name": "simple_aggregation_transactions",
+      "version": "v8",
+      "collection_name": "transactions",
+      "agg_type": "simple",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 22.94307780265808,
+      "avg_throughput": 1.3075839369957738,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 8.327452898025513,
+          "throughput": 1.2008473806403706
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 7.299141883850098,
+          "throughput": 1.370024060242719
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 7.316483020782471,
+          "throughput": 1.3667769024536789
+        }
+      ]
+    },
+    "Group_by Aggregation transactions": {
+      "test_name": "group_by_aggregation_transactions",
+      "version": "v8",
+      "collection_name": "transactions",
+      "agg_type": "group_by",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 41.34019374847412,
+      "avg_throughput": 0.7256860038568955,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 13.782512903213501,
+          "throughput": 0.7255570932691398
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 13.747572898864746,
+          "throughput": 0.7274011255343686
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 13.810107946395874,
+          "throughput": 0.7241073016094544
+        }
+      ]
+    },
+    "Simple Aggregation loans": {
+      "test_name": "simple_aggregation_loans",
+      "version": "v8",
+      "collection_name": "loans",
+      "agg_type": "simple",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 18.076603174209595,
+      "avg_throughput": 1.659603837672437,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 8.531658172607422,
+          "throughput": 1.1721050934866308
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 4.4978320598602295,
+          "throughput": 2.2232933259652987
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 5.047112941741943,
+          "throughput": 1.981330736091797
+        }
+      ]
+    },
+    "Group_by Aggregation loans": {
+      "test_name": "group_by_aggregation_loans",
+      "version": "v8",
+      "collection_name": "loans",
+      "agg_type": "group_by",
+      "num_aggregations": 10,
+      "iterations": 3,
+      "total_aggregations": 30,
+      "total_time": 13.562386274337769,
+      "avg_throughput": 2.2120001151098947,
+      "iteration_results": [
+        {
+          "iteration": 1,
+          "aggregations": 10,
+          "time": 4.388695240020752,
+          "throughput": 2.278581549433976
+        },
+        {
+          "iteration": 2,
+          "aggregations": 10,
+          "time": 4.929933786392212,
+          "throughput": 2.02842480919366
+        },
+        {
+          "iteration": 3,
+          "aggregations": 10,
+          "time": 4.243757247924805,
+          "throughput": 2.3564024556046403
+        }
+      ]
+    }
+  }
+}

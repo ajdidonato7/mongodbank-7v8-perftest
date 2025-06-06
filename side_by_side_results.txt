@@ -1,0 +1,886 @@
+2025-06-06 09:30:16,404 - utils.monitoring - INFO - Resource monitoring started
+2025-06-06 09:30:16,405 - __main__ - INFO - Running bulk_insert_customers_100 test for MongoDB v7
+2025-06-06 09:30:16,405 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_customers_100 on MongoDB v7
+2025-06-06 09:30:16,405 - __main__ - INFO - Running bulk_insert_customers_100 test for MongoDB v8
+2025-06-06 09:30:16,405 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:16,405 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_customers_100 on MongoDB v8
+2025-06-06 09:30:16,406 - __main__ - INFO - Iteration 1/3 for v8
+Successfully connected to MongoDB v8
+Successfully connected to MongoDB v7
+2025-06-06 09:30:17,322 - __main__ - INFO - v8: Inserted 100 customers in 0.88s (113.26 docs/s)
+2025-06-06 09:30:17,322 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:17,361 - __main__ - INFO - v7: Inserted 100 customers in 0.90s (111.66 docs/s)
+2025-06-06 09:30:17,364 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:30:17,437 - __main__ - INFO - v8: Inserted 100 customers in 0.06s (1728.91 docs/s)
+2025-06-06 09:30:17,437 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:30:17,486 - __main__ - INFO - v7: Inserted 100 customers in 0.08s (1292.11 docs/s)
+2025-06-06 09:30:17,487 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:30:17,529 - __main__ - INFO - v8: Inserted 100 customers in 0.06s (1706.77 docs/s)
+2025-06-06 09:30:17,529 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_customers_100 on MongoDB v8
+2025-06-06 09:30:17,590 - __main__ - INFO - v7: Inserted 100 customers in 0.07s (1364.38 docs/s)
+2025-06-06 09:30:17,590 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_customers_100 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert customers (batch: 100)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 286.74 ops/s
+MongoDB v8.0: 300.18 ops/s
+Improvement: 4.69%
+================================================================================
+
+2025-06-06 09:30:17,590 - __main__ - INFO - Running bulk_insert_customers_1000 test for MongoDB v7
+2025-06-06 09:30:17,590 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_customers_1000 on MongoDB v7
+2025-06-06 09:30:17,590 - __main__ - INFO - Running bulk_insert_customers_1000 test for MongoDB v8
+2025-06-06 09:30:17,590 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:17,591 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_customers_1000 on MongoDB v8
+2025-06-06 09:30:17,605 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:30:18,394 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 97, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "christopher.smith@anderson.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'christopher.smith@anderson.com'}, 'op': {'customer_id': 'CUST_14f00ccdc9144bdcb6a10058af2df908', 'first_name': 'Christopher', 'last_name': 'Smith', 'email': 'christopher.smith@anderson.com', 'phone': '+1-428-731-4846x025', 'address': {'street': '5497 Troy Brooks Suite 034', 'city': 'Mccormickmouth', 'state': 'MA', 'zip': '27674', 'country': 'US'}, 'date_of_birth': datetime.datetime(1986, 6, 5, 0, 0), 'ssn': '581-87-7653', 'credit_score': 804, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 17, 664551), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 17, 664552), '_id': ObjectId('6842ed6a95c35d9de5b862c0')}}], 'writeConcernErrors': [], 'nInserted': 97, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:18,394 - __main__ - INFO - v8: Inserted 97 customers in 0.26s (370.56 docs/s)
+2025-06-06 09:30:18,394 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:18,550 - __main__ - INFO - v7: Inserted 1000 customers in 0.37s (2704.49 docs/s)
+2025-06-06 09:30:18,556 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:30:19,196 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 570, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "lisa.smith@smith.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'lisa.smith@smith.com'}, 'op': {'customer_id': 'CUST_c022b3624e084299be6ab55498366f29', 'first_name': 'Lisa', 'last_name': 'Smith', 'email': 'lisa.smith@smith.com', 'phone': '(667)648-5191x756', 'address': {'street': '19352 Devon Lights Suite 135', 'city': 'Woodfort', 'state': 'AZ', 'zip': '09921', 'country': 'US'}, 'date_of_birth': datetime.datetime(1995, 11, 7, 0, 0), 'ssn': '866-42-4269', 'credit_score': 499, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 18, 688507), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 18, 688507), '_id': ObjectId('6842ed6a95c35d9de5b86c69')}}], 'writeConcernErrors': [], 'nInserted': 570, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:19,196 - __main__ - INFO - v8: Inserted 570 customers in 0.26s (2166.17 docs/s)
+2025-06-06 09:30:19,196 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:30:19,347 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 404, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "daniel.smith@davis.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'daniel.smith@davis.com'}, 'op': {'customer_id': 'CUST_ceb91127dd8b41908a1f7871eeebb777', 'first_name': 'Daniel', 'last_name': 'Smith', 'email': 'daniel.smith@davis.com', 'phone': '659-911-7930x9618', 'address': {'street': '2632 Wilson Shoals Suite 912', 'city': 'West Natalieview', 'state': 'AR', 'zip': '74161', 'country': 'US'}, 'date_of_birth': datetime.datetime(1947, 2, 25, 0, 0), 'ssn': '189-32-5830', 'credit_score': 779, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 18, 834161), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 18, 834162), '_id': ObjectId('6842ed6b95c35d9de5b86fab')}}], 'writeConcernErrors': [], 'nInserted': 404, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:19,350 - __main__ - INFO - v7: Inserted 404 customers in 0.29s (1399.88 docs/s)
+2025-06-06 09:30:19,355 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:30:20,093 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 910, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "john.johnson@lee.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'john.johnson@lee.com'}, 'op': {'customer_id': 'CUST_4603659bcb60495e8087960384ce6603', 'first_name': 'John', 'last_name': 'Johnson', 'email': 'john.johnson@lee.com', 'phone': '547-404-7944', 'address': {'street': '01262 Stone Square Apt. 837', 'city': 'Floydburgh', 'state': 'WY', 'zip': '90500', 'country': 'US'}, 'date_of_birth': datetime.datetime(1950, 6, 17, 0, 0), 'ssn': '111-54-4639', 'credit_score': 320, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 19, 669920), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 19, 669920), '_id': ObjectId('6842ed6b95c35d9de5b8758d')}}], 'writeConcernErrors': [], 'nInserted': 910, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:20,094 - __main__ - INFO - v8: Inserted 910 customers in 0.36s (2538.90 docs/s)
+2025-06-06 09:30:20,094 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_customers_1000 on MongoDB v8
+2025-06-06 09:30:20,168 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 85, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "david.smith@green.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'david.smith@green.com'}, 'op': {'customer_id': 'CUST_540a479120444f69b416c8d9e9f1ecb2', 'first_name': 'David', 'last_name': 'Smith', 'email': 'david.smith@green.com', 'phone': '201-648-1535', 'address': {'street': '70648 Odom Greens Suite 061', 'city': 'Kingborough', 'state': 'LA', 'zip': '32847', 'country': 'US'}, 'date_of_birth': datetime.datetime(1947, 2, 3, 0, 0), 'ssn': '117-36-8111', 'credit_score': 778, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 19, 407063), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 19, 407063), '_id': ObjectId('6842ed6b95c35d9de5b8763c')}}], 'writeConcernErrors': [], 'nInserted': 85, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:20,168 - __main__ - INFO - v7: Inserted 85 customers in 0.33s (257.50 docs/s)
+2025-06-06 09:30:20,168 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_customers_1000 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert customers (batch: 1000)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 1506.41 ops/s
+MongoDB v8.0: 1785.30 ops/s
+Improvement: 18.51%
+================================================================================
+
+2025-06-06 09:30:20,169 - __main__ - INFO - Running bulk_insert_customers_10000 test for MongoDB v7
+2025-06-06 09:30:20,169 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_customers_10000 on MongoDB v7
+2025-06-06 09:30:20,169 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:20,170 - __main__ - INFO - Running bulk_insert_customers_10000 test for MongoDB v8
+2025-06-06 09:30:20,171 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_customers_10000 on MongoDB v8
+2025-06-06 09:30:20,172 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:30:27,755 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 1483, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "samuel.harmon@young.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'samuel.harmon@young.com'}, 'op': {'customer_id': 'CUST_60de05b02d7d462e80e46b4b9417be51', 'first_name': 'Samuel', 'last_name': 'Harmon', 'email': 'samuel.harmon@young.com', 'phone': '001-401-594-8852x3365', 'address': {'street': '155 Laura Squares Suite 636', 'city': 'West Deanna', 'state': 'AK', 'zip': '37037', 'country': 'US'}, 'date_of_birth': datetime.datetime(1968, 6, 11, 0, 0), 'ssn': '651-01-2259', 'credit_score': 384, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 21, 47897), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 21, 47897), '_id': ObjectId('6842ed7195c35d9de5b87f9a')}}], 'writeConcernErrors': [], 'nInserted': 1483, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:27,755 - __main__ - INFO - v8: Inserted 1483 customers in 1.78s (832.86 docs/s)
+2025-06-06 09:30:27,756 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:29,338 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 990, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "holly.dunn@williams.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'holly.dunn@williams.com'}, 'op': {'customer_id': 'CUST_b57f0e0826ba43f089063c1a257f33f4', 'first_name': 'Holly', 'last_name': 'Dunn', 'email': 'holly.dunn@williams.com', 'phone': '259-713-8855x15923', 'address': {'street': '660 Robinson Manors Apt. 866', 'city': 'Murphyberg', 'state': 'UT', 'zip': '70269', 'country': 'US'}, 'date_of_birth': datetime.datetime(1944, 8, 17, 0, 0), 'ssn': '760-26-1369', 'credit_score': 742, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 20, 813445), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 20, 813445), '_id': ObjectId('6842ed7295c35d9de5b8a4bd')}}], 'writeConcernErrors': [], 'nInserted': 990, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:29,340 - __main__ - INFO - v7: Inserted 990 customers in 3.26s (303.85 docs/s)
+2025-06-06 09:30:29,355 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:30:34,695 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 295, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "john.nelson@wilson.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'john.nelson@wilson.com'}, 'op': {'customer_id': 'CUST_c98b76a9064642cea72425654e623488', 'first_name': 'John', 'last_name': 'Nelson', 'email': 'john.nelson@wilson.com', 'phone': '001-281-940-8286', 'address': {'street': '596 Robert Road Suite 487', 'city': 'Shawside', 'state': 'RI', 'zip': '10366', 'country': 'US'}, 'date_of_birth': datetime.datetime(2006, 10, 1, 0, 0), 'ssn': '648-16-9100', 'credit_score': 499, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 27, 865188), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 27, 865188), '_id': ObjectId('6842ed7895c35d9de5b8c916')}}], 'writeConcernErrors': [], 'nInserted': 295, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:34,697 - __main__ - INFO - v8: Inserted 295 customers in 2.43s (121.55 docs/s)
+2025-06-06 09:30:34,697 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:30:35,616 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 2305, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "james.brown@smith.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'james.brown@smith.com'}, 'op': {'customer_id': 'CUST_8f39c3523d554c43ba6fdd66cb9296e2', 'first_name': 'James', 'last_name': 'Brown', 'email': 'james.brown@smith.com', 'phone': '638-847-2906', 'address': {'street': '6513 Rodriguez Stravenue', 'city': 'Charlesport', 'state': 'WA', 'zip': '53175', 'country': 'US'}, 'date_of_birth': datetime.datetime(1949, 12, 8, 0, 0), 'ssn': '046-09-0236', 'credit_score': 583, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 30, 548066), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 30, 548066), '_id': ObjectId('6842ed7995c35d9de5b8f800')}}], 'writeConcernErrors': [], 'nInserted': 2305, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:35,617 - __main__ - INFO - v7: Inserted 2305 customers in 1.85s (1246.50 docs/s)
+2025-06-06 09:30:35,618 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:30:41,505 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 852, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "brian.smith@miller.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'brian.smith@miller.com'}, 'op': {'customer_id': 'CUST_dce318c16fe84e81ad11f2b4ec61618a', 'first_name': 'Brian', 'last_name': 'Smith', 'email': 'brian.smith@miller.com', 'phone': '790-631-4887', 'address': {'street': '643 Samuel Isle', 'city': 'Brownland', 'state': 'MI', 'zip': '90345', 'country': 'US'}, 'date_of_birth': datetime.datetime(1984, 10, 3, 0, 0), 'ssn': '181-06-1238', 'credit_score': 777, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 35, 31434), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 35, 31434), '_id': ObjectId('6842ed7f95c35d9de5b91963')}}], 'writeConcernErrors': [], 'nInserted': 852, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:41,508 - __main__ - INFO - v8: Inserted 852 customers in 1.76s (483.04 docs/s)
+2025-06-06 09:30:41,508 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_customers_10000 on MongoDB v8
+2025-06-06 09:30:42,830 - __main__ - WARNING - Error during bulk insert: batch op errors occurred, full error: {'writeErrors': [{'index': 357, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: banking.customers index: email_1 dup key: { email: "william.taylor@lopez.com" }', 'keyPattern': {'email': 1}, 'keyValue': {'email': 'william.taylor@lopez.com'}, 'op': {'customer_id': 'CUST_2a437fda92d24605ac04a893b3eb82f4', 'first_name': 'William', 'last_name': 'Taylor', 'email': 'william.taylor@lopez.com', 'phone': '935-838-0517', 'address': {'street': '9926 Chung Keys', 'city': 'Lake Jameschester', 'state': 'HI', 'zip': '11601', 'country': 'US'}, 'date_of_birth': datetime.datetime(1982, 11, 17, 0, 0), 'ssn': '547-81-6752', 'credit_score': 747, 'created_at': datetime.datetime(2025, 6, 6, 13, 30, 35, 971889), 'updated_at': datetime.datetime(2025, 6, 6, 13, 30, 35, 971890), '_id': ObjectId('6842ed8095c35d9de5b93e84')}}], 'writeConcernErrors': [], 'nInserted': 357, 'nUpserted': 0, 'nMatched': 0, 'nModified': 0, 'nRemoved': 0, 'upserted': []}
+2025-06-06 09:30:42,834 - __main__ - INFO - v7: Inserted 357 customers in 2.04s (175.17 docs/s)
+2025-06-06 09:30:42,834 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_customers_10000 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert customers (batch: 10000)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 511.10 ops/s
+MongoDB v8.0: 440.43 ops/s
+Improvement: -13.83%
+================================================================================
+
+2025-06-06 09:30:42,839 - __main__ - INFO - Running bulk_insert_accounts_100 test for MongoDB v7
+2025-06-06 09:30:42,840 - __main__ - INFO - Running bulk_insert_accounts_100 test for MongoDB v8
+2025-06-06 09:30:42,956 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_accounts_100 on MongoDB v8
+2025-06-06 09:30:42,957 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:30:42,957 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_accounts_100 on MongoDB v7
+2025-06-06 09:30:42,957 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:43,015 - __main__ - INFO - v7: Inserted 100 accounts in 0.05s (1847.54 docs/s)
+2025-06-06 09:30:43,015 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:30:43,018 - __main__ - INFO - v8: Inserted 100 accounts in 0.06s (1703.70 docs/s)
+2025-06-06 09:30:43,019 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:43,082 - __main__ - INFO - v7: Inserted 100 accounts in 0.06s (1701.29 docs/s)
+2025-06-06 09:30:43,082 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:30:43,089 - __main__ - INFO - v8: Inserted 100 accounts in 0.06s (1556.39 docs/s)
+2025-06-06 09:30:43,089 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:30:43,135 - __main__ - INFO - v8: Inserted 100 accounts in 0.05s (2219.31 docs/s)
+2025-06-06 09:30:43,136 - __main__ - INFO - v7: Inserted 100 accounts in 0.05s (1898.40 docs/s)
+2025-06-06 09:30:43,136 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_accounts_100 on MongoDB v8
+2025-06-06 09:30:43,136 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_accounts_100 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert accounts (batch: 100)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 1811.80 ops/s
+MongoDB v8.0: 1785.65 ops/s
+Improvement: -1.44%
+================================================================================
+
+2025-06-06 09:30:43,136 - __main__ - INFO - Running bulk_insert_accounts_1000 test for MongoDB v7
+2025-06-06 09:30:43,137 - __main__ - INFO - Running bulk_insert_accounts_1000 test for MongoDB v8
+2025-06-06 09:30:43,220 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_accounts_1000 on MongoDB v7
+2025-06-06 09:30:43,221 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:43,221 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_accounts_1000 on MongoDB v8
+2025-06-06 09:30:43,221 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:30:43,460 - __main__ - INFO - v8: Inserted 1000 accounts in 0.21s (4759.82 docs/s)
+2025-06-06 09:30:43,460 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:43,517 - __main__ - INFO - v7: Inserted 1000 accounts in 0.27s (3683.26 docs/s)
+2025-06-06 09:30:43,517 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:30:43,630 - __main__ - INFO - v8: Inserted 1000 accounts in 0.16s (6401.69 docs/s)
+2025-06-06 09:30:43,630 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:30:43,753 - __main__ - INFO - v7: Inserted 1000 accounts in 0.22s (4475.13 docs/s)
+2025-06-06 09:30:43,753 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:30:43,834 - __main__ - INFO - v8: Inserted 1000 accounts in 0.19s (5187.42 docs/s)
+2025-06-06 09:30:43,834 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_accounts_1000 on MongoDB v8
+2025-06-06 09:30:43,953 - __main__ - INFO - v7: Inserted 1000 accounts in 0.19s (5372.04 docs/s)
+2025-06-06 09:30:43,953 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_accounts_1000 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert accounts (batch: 1000)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 4404.61 ops/s
+MongoDB v8.0: 5366.01 ops/s
+Improvement: 21.83%
+================================================================================
+
+2025-06-06 09:30:43,954 - __main__ - INFO - Running bulk_insert_accounts_10000 test for MongoDB v7
+2025-06-06 09:30:43,955 - __main__ - INFO - Running bulk_insert_accounts_10000 test for MongoDB v8
+2025-06-06 09:30:44,024 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_accounts_10000 on MongoDB v8
+2025-06-06 09:30:44,024 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:30:44,039 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_accounts_10000 on MongoDB v7
+2025-06-06 09:30:44,039 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:46,804 - __main__ - INFO - v8: Inserted 10000 accounts in 2.56s (3912.03 docs/s)
+2025-06-06 09:30:46,804 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:47,273 - __main__ - INFO - v7: Inserted 10000 accounts in 2.98s (3352.79 docs/s)
+2025-06-06 09:30:47,274 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:30:48,373 - __main__ - INFO - v8: Inserted 10000 accounts in 1.44s (6930.78 docs/s)
+2025-06-06 09:30:48,373 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:30:50,133 - __main__ - INFO - v8: Inserted 10000 accounts in 1.67s (5982.36 docs/s)
+2025-06-06 09:30:50,133 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_accounts_10000 on MongoDB v8
+2025-06-06 09:30:50,409 - __main__ - INFO - v7: Inserted 10000 accounts in 3.05s (3278.20 docs/s)
+2025-06-06 09:30:50,410 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:30:52,020 - __main__ - INFO - v7: Inserted 10000 accounts in 1.51s (6622.62 docs/s)
+2025-06-06 09:30:52,020 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_accounts_10000 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert accounts (batch: 10000)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 3977.19 ops/s
+MongoDB v8.0: 5290.41 ops/s
+Improvement: 33.02%
+================================================================================
+
+2025-06-06 09:30:52,023 - __main__ - INFO - Running bulk_insert_transactions_100 test for MongoDB v7
+2025-06-06 09:30:52,023 - __main__ - INFO - Running bulk_insert_transactions_100 test for MongoDB v8
+2025-06-06 09:30:52,103 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_transactions_100 on MongoDB v8
+2025-06-06 09:30:52,104 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:30:52,119 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_transactions_100 on MongoDB v7
+2025-06-06 09:30:52,119 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:52,197 - __main__ - INFO - v8: Inserted 100 transactions in 0.08s (1259.78 docs/s)
+2025-06-06 09:30:52,197 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:52,208 - __main__ - INFO - v7: Inserted 100 transactions in 0.08s (1312.46 docs/s)
+2025-06-06 09:30:52,208 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:30:52,283 - __main__ - INFO - v8: Inserted 100 transactions in 0.08s (1290.77 docs/s)
+2025-06-06 09:30:52,283 - __main__ - INFO - v7: Inserted 100 transactions in 0.07s (1525.51 docs/s)
+2025-06-06 09:30:52,283 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:30:52,283 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:30:52,381 - __main__ - INFO - v7: Inserted 100 transactions in 0.08s (1277.96 docs/s)
+2025-06-06 09:30:52,381 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_transactions_100 on MongoDB v7
+2025-06-06 09:30:52,388 - __main__ - INFO - v8: Inserted 100 transactions in 0.09s (1128.87 docs/s)
+2025-06-06 09:30:52,388 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_transactions_100 on MongoDB v8
+
+================================================================================
+Test: Bulk Insert transactions (batch: 100)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 1363.67 ops/s
+MongoDB v8.0: 1222.31 ops/s
+Improvement: -10.37%
+================================================================================
+
+2025-06-06 09:30:52,389 - __main__ - INFO - Running bulk_insert_transactions_1000 test for MongoDB v7
+2025-06-06 09:30:52,389 - __main__ - INFO - Running bulk_insert_transactions_1000 test for MongoDB v8
+2025-06-06 09:30:52,476 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_transactions_1000 on MongoDB v8
+2025-06-06 09:30:52,477 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:30:52,484 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_transactions_1000 on MongoDB v7
+2025-06-06 09:30:52,489 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:52,919 - __main__ - INFO - v8: Inserted 1000 transactions in 0.27s (3765.87 docs/s)
+2025-06-06 09:30:52,919 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:53,095 - __main__ - INFO - v7: Inserted 1000 transactions in 0.42s (2365.32 docs/s)
+2025-06-06 09:30:53,095 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:30:53,240 - __main__ - INFO - v8: Inserted 1000 transactions in 0.21s (4677.73 docs/s)
+2025-06-06 09:30:53,240 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:30:53,556 - __main__ - INFO - v8: Inserted 1000 transactions in 0.23s (4401.70 docs/s)
+2025-06-06 09:30:53,556 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_transactions_1000 on MongoDB v8
+2025-06-06 09:30:53,617 - __main__ - INFO - v7: Inserted 1000 transactions in 0.43s (2302.45 docs/s)
+2025-06-06 09:30:53,617 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:30:54,063 - __main__ - INFO - v7: Inserted 1000 transactions in 0.34s (2960.83 docs/s)
+2025-06-06 09:30:54,063 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_transactions_1000 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert transactions (batch: 1000)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 2510.80 ops/s
+MongoDB v8.0: 4246.24 ops/s
+Improvement: 69.12%
+================================================================================
+
+2025-06-06 09:30:54,065 - __main__ - INFO - Running bulk_insert_transactions_10000 test for MongoDB v7
+2025-06-06 09:30:54,066 - __main__ - INFO - Running bulk_insert_transactions_10000 test for MongoDB v8
+2025-06-06 09:30:54,170 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_transactions_10000 on MongoDB v7
+2025-06-06 09:30:54,171 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_transactions_10000 on MongoDB v8
+2025-06-06 09:30:54,171 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:30:54,172 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:30:57,632 - __main__ - INFO - v8: Inserted 10000 transactions in 1.70s (5885.22 docs/s)
+2025-06-06 09:30:57,632 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:30:59,575 - __main__ - INFO - v7: Inserted 10000 transactions in 3.53s (2829.27 docs/s)
+2025-06-06 09:30:59,575 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:31:00,184 - __main__ - INFO - v8: Inserted 10000 transactions in 1.65s (6060.60 docs/s)
+2025-06-06 09:31:00,184 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:31:03,453 - __main__ - INFO - v8: Inserted 10000 transactions in 2.04s (4901.98 docs/s)
+2025-06-06 09:31:03,453 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_transactions_10000 on MongoDB v8
+2025-06-06 09:31:03,840 - __main__ - INFO - v7: Inserted 10000 transactions in 3.02s (3316.74 docs/s)
+2025-06-06 09:31:03,840 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:31:06,965 - __main__ - INFO - v7: Inserted 10000 transactions in 2.18s (4580.63 docs/s)
+2025-06-06 09:31:06,965 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_transactions_10000 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert transactions (batch: 10000)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 3435.41 ops/s
+MongoDB v8.0: 5566.72 ops/s
+Improvement: 62.04%
+================================================================================
+
+2025-06-06 09:31:06,968 - __main__ - INFO - Running bulk_insert_loans_100 test for MongoDB v7
+2025-06-06 09:31:06,968 - __main__ - INFO - Running bulk_insert_loans_100 test for MongoDB v8
+2025-06-06 09:31:07,093 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_loans_100 on MongoDB v7
+2025-06-06 09:31:07,094 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_loans_100 on MongoDB v8
+2025-06-06 09:31:07,094 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:31:07,094 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:31:07,902 - __main__ - INFO - v8: Inserted 100 loans in 0.64s (156.09 docs/s)
+2025-06-06 09:31:07,902 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:31:08,604 - __main__ - INFO - v8: Inserted 100 loans in 0.65s (154.65 docs/s)
+2025-06-06 09:31:08,604 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:31:08,704 - __main__ - INFO - v7: Inserted 100 loans in 1.45s (68.91 docs/s)
+2025-06-06 09:31:08,705 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:31:09,257 - __main__ - INFO - v8: Inserted 100 loans in 0.59s (168.53 docs/s)
+2025-06-06 09:31:09,257 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_loans_100 on MongoDB v8
+2025-06-06 09:31:09,634 - __main__ - INFO - v7: Inserted 100 loans in 0.87s (114.48 docs/s)
+2025-06-06 09:31:09,634 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:31:10,304 - __main__ - INFO - v7: Inserted 100 loans in 0.60s (166.09 docs/s)
+2025-06-06 09:31:10,304 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_loans_100 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert loans (batch: 100)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 102.50 ops/s
+MongoDB v8.0: 159.52 ops/s
+Improvement: 55.63%
+================================================================================
+
+2025-06-06 09:31:10,306 - __main__ - INFO - Running bulk_insert_loans_1000 test for MongoDB v7
+2025-06-06 09:31:10,306 - __main__ - INFO - Running bulk_insert_loans_1000 test for MongoDB v8
+2025-06-06 09:31:10,386 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_loans_1000 on MongoDB v8
+2025-06-06 09:31:10,386 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:31:10,395 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_loans_1000 on MongoDB v7
+2025-06-06 09:31:10,403 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:31:20,318 - __main__ - INFO - v8: Inserted 1000 loans in 8.52s (117.41 docs/s)
+2025-06-06 09:31:20,318 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:31:20,602 - __main__ - INFO - v7: Inserted 1000 loans in 8.88s (112.56 docs/s)
+2025-06-06 09:31:20,602 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:31:30,346 - __main__ - INFO - v8: Inserted 1000 loans in 8.92s (112.14 docs/s)
+2025-06-06 09:31:30,346 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:31:30,373 - __main__ - INFO - v7: Inserted 1000 loans in 8.66s (115.43 docs/s)
+2025-06-06 09:31:30,374 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:31:39,670 - __main__ - INFO - v8: Inserted 1000 loans in 7.89s (126.77 docs/s)
+2025-06-06 09:31:39,671 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_loans_1000 on MongoDB v8
+2025-06-06 09:31:40,726 - __main__ - INFO - v7: Inserted 1000 loans in 9.04s (110.60 docs/s)
+2025-06-06 09:31:40,726 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_loans_1000 on MongoDB v7
+
+================================================================================
+Test: Bulk Insert loans (batch: 1000)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 112.83 ops/s
+MongoDB v8.0: 118.47 ops/s
+Improvement: 5.00%
+================================================================================
+
+2025-06-06 09:31:40,738 - __main__ - INFO - Running bulk_insert_loans_10000 test for MongoDB v7
+2025-06-06 09:31:40,739 - __main__ - INFO - Running bulk_insert_loans_10000 test for MongoDB v8
+2025-06-06 09:31:40,848 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_loans_10000 on MongoDB v8
+2025-06-06 09:31:40,849 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:31:40,864 - utils.performance_metrics - INFO - Started metrics tracking for bulk_insert_loans_10000 on MongoDB v7
+2025-06-06 09:31:40,868 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:33:16,166 - __main__ - INFO - v8: Inserted 10000 loans in 83.01s (120.47 docs/s)
+2025-06-06 09:33:16,167 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:33:21,894 - __main__ - INFO - v7: Inserted 10000 loans in 89.16s (112.16 docs/s)
+2025-06-06 09:33:21,901 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:34:48,476 - __main__ - INFO - v8: Inserted 10000 loans in 86.99s (114.96 docs/s)
+2025-06-06 09:34:48,478 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:34:53,097 - __main__ - INFO - v7: Inserted 10000 loans in 86.06s (116.19 docs/s)
+2025-06-06 09:34:53,097 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:36:24,023 - __main__ - INFO - v7: Inserted 10000 loans in 84.86s (117.85 docs/s)
+2025-06-06 09:36:24,024 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_loans_10000 on MongoDB v7
+2025-06-06 09:36:25,389 - __main__ - INFO - v8: Inserted 10000 loans in 91.32s (109.51 docs/s)
+2025-06-06 09:36:25,390 - utils.performance_metrics - INFO - Stopped metrics tracking for bulk_insert_loans_10000 on MongoDB v8
+
+================================================================================
+Test: Bulk Insert loans (batch: 10000)
+--------------------------------------------------------------------------------
+MongoDB v7.0: 115.35 ops/s
+MongoDB v8.0: 114.80 ops/s
+Improvement: -0.47%
+================================================================================
+
+2025-06-06 09:36:25,582 - __main__ - INFO - Running single_read_customers test for MongoDB v7
+2025-06-06 09:36:25,582 - __main__ - INFO - Running single_read_customers test for MongoDB v8
+2025-06-06 09:36:25,612 - utils.performance_metrics - INFO - Started metrics tracking for single_read_customers on MongoDB v8
+2025-06-06 09:36:25,612 - utils.performance_metrics - INFO - Started metrics tracking for single_read_customers on MongoDB v7
+2025-06-06 09:36:25,612 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:36:25,612 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:36:28,730 - __main__ - INFO - v8: Completed 100 single reads in 3.12s (32.08 reads/s)
+2025-06-06 09:36:28,730 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:36:28,905 - __main__ - INFO - v7: Completed 100 single reads in 3.29s (30.37 reads/s)
+2025-06-06 09:36:28,906 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:36:31,847 - __main__ - INFO - v8: Completed 100 single reads in 3.12s (32.09 reads/s)
+2025-06-06 09:36:31,847 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:36:32,216 - __main__ - INFO - v7: Completed 100 single reads in 3.31s (30.21 reads/s)
+2025-06-06 09:36:32,216 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:36:34,983 - __main__ - INFO - v8: Completed 100 single reads in 3.14s (31.89 reads/s)
+2025-06-06 09:36:34,984 - utils.performance_metrics - INFO - Stopped metrics tracking for single_read_customers on MongoDB v8
+2025-06-06 09:36:35,545 - __main__ - INFO - v7: Completed 100 single reads in 3.33s (30.04 reads/s)
+2025-06-06 09:36:35,545 - utils.performance_metrics - INFO - Stopped metrics tracking for single_read_customers on MongoDB v7
+
+================================================================================
+Test: Single Read customers
+--------------------------------------------------------------------------------
+MongoDB v7.0: 30.21 ops/s
+MongoDB v8.0: 32.02 ops/s
+Improvement: 6.00%
+================================================================================
+
+2025-06-06 09:36:35,545 - __main__ - INFO - Running filtered_read_customers test for MongoDB v7
+2025-06-06 09:36:35,545 - __main__ - INFO - Running filtered_read_customers test for MongoDB v8
+2025-06-06 09:36:35,574 - utils.performance_metrics - INFO - Started metrics tracking for filtered_read_customers on MongoDB v8
+2025-06-06 09:36:35,574 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:36:35,575 - utils.performance_metrics - INFO - Started metrics tracking for filtered_read_customers on MongoDB v7
+2025-06-06 09:36:35,575 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:36:39,007 - __main__ - INFO - v8: Completed 100 filtered reads in 3.43s (29.12 reads/s)
+2025-06-06 09:36:39,007 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:36:39,253 - __main__ - INFO - v7: Completed 100 filtered reads in 3.68s (27.18 reads/s)
+2025-06-06 09:36:39,253 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:36:42,328 - __main__ - INFO - v8: Completed 100 filtered reads in 3.32s (30.12 reads/s)
+2025-06-06 09:36:42,328 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:36:42,768 - __main__ - INFO - v7: Completed 100 filtered reads in 3.51s (28.45 reads/s)
+2025-06-06 09:36:42,769 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:36:46,105 - __main__ - INFO - v8: Completed 100 filtered reads in 3.78s (26.48 reads/s)
+2025-06-06 09:36:46,106 - utils.performance_metrics - INFO - Stopped metrics tracking for filtered_read_customers on MongoDB v8
+2025-06-06 09:36:46,553 - __main__ - INFO - v7: Completed 100 filtered reads in 3.78s (26.43 reads/s)
+2025-06-06 09:36:46,554 - utils.performance_metrics - INFO - Stopped metrics tracking for filtered_read_customers on MongoDB v7
+
+================================================================================
+Test: Filtered Read customers
+--------------------------------------------------------------------------------
+MongoDB v7.0: 27.33 ops/s
+MongoDB v8.0: 28.49 ops/s
+Improvement: 4.25%
+================================================================================
+
+2025-06-06 09:36:46,558 - __main__ - INFO - Running complex_read_customers test for MongoDB v7
+2025-06-06 09:36:46,560 - __main__ - INFO - Running complex_read_customers test for MongoDB v8
+2025-06-06 09:36:46,594 - utils.performance_metrics - INFO - Started metrics tracking for complex_read_customers on MongoDB v7
+2025-06-06 09:36:46,594 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:36:46,600 - utils.performance_metrics - INFO - Started metrics tracking for complex_read_customers on MongoDB v8
+2025-06-06 09:36:46,600 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:36:50,086 - __main__ - INFO - v8: Completed 100 complex reads in 3.49s (28.68 reads/s)
+2025-06-06 09:36:50,087 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:36:50,232 - __main__ - INFO - v7: Completed 100 complex reads in 3.64s (27.49 reads/s)
+2025-06-06 09:36:50,232 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:36:53,573 - __main__ - INFO - v8: Completed 100 complex reads in 3.49s (28.69 reads/s)
+2025-06-06 09:36:53,573 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:36:53,842 - __main__ - INFO - v7: Completed 100 complex reads in 3.61s (27.70 reads/s)
+2025-06-06 09:36:53,843 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:36:57,014 - __main__ - INFO - v8: Completed 100 complex reads in 3.44s (29.06 reads/s)
+2025-06-06 09:36:57,015 - utils.performance_metrics - INFO - Stopped metrics tracking for complex_read_customers on MongoDB v8
+2025-06-06 09:36:57,383 - __main__ - INFO - v7: Completed 100 complex reads in 3.54s (28.25 reads/s)
+2025-06-06 09:36:57,383 - utils.performance_metrics - INFO - Stopped metrics tracking for complex_read_customers on MongoDB v7
+
+================================================================================
+Test: Complex Read customers
+--------------------------------------------------------------------------------
+MongoDB v7.0: 27.81 ops/s
+MongoDB v8.0: 28.81 ops/s
+Improvement: 3.60%
+================================================================================
+
+2025-06-06 09:36:57,383 - __main__ - INFO - Running single_read_accounts test for MongoDB v7
+2025-06-06 09:36:57,384 - __main__ - INFO - Running single_read_accounts test for MongoDB v8
+2025-06-06 09:36:57,412 - utils.performance_metrics - INFO - Started metrics tracking for single_read_accounts on MongoDB v8
+2025-06-06 09:36:57,412 - utils.performance_metrics - INFO - Started metrics tracking for single_read_accounts on MongoDB v7
+2025-06-06 09:36:57,412 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:36:57,412 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:37:00,782 - __main__ - INFO - v8: Completed 100 single reads in 3.37s (29.68 reads/s)
+2025-06-06 09:37:00,782 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:37:00,982 - __main__ - INFO - v7: Completed 100 single reads in 3.57s (28.01 reads/s)
+2025-06-06 09:37:00,983 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:37:03,968 - __main__ - INFO - v8: Completed 100 single reads in 3.19s (31.39 reads/s)
+2025-06-06 09:37:03,969 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:37:04,262 - __main__ - INFO - v7: Completed 100 single reads in 3.28s (30.50 reads/s)
+2025-06-06 09:37:04,262 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:37:07,195 - __main__ - INFO - v8: Completed 100 single reads in 3.23s (31.00 reads/s)
+2025-06-06 09:37:07,197 - utils.performance_metrics - INFO - Stopped metrics tracking for single_read_accounts on MongoDB v8
+2025-06-06 09:37:07,651 - __main__ - INFO - v7: Completed 100 single reads in 3.39s (29.51 reads/s)
+2025-06-06 09:37:07,651 - utils.performance_metrics - INFO - Stopped metrics tracking for single_read_accounts on MongoDB v7
+
+================================================================================
+Test: Single Read accounts
+--------------------------------------------------------------------------------
+MongoDB v7.0: 29.30 ops/s
+MongoDB v8.0: 30.67 ops/s
+Improvement: 4.67%
+================================================================================
+
+2025-06-06 09:37:07,652 - __main__ - INFO - Running filtered_read_accounts test for MongoDB v7
+2025-06-06 09:37:07,652 - __main__ - INFO - Running filtered_read_accounts test for MongoDB v8
+2025-06-06 09:37:07,684 - utils.performance_metrics - INFO - Started metrics tracking for filtered_read_accounts on MongoDB v8
+2025-06-06 09:37:07,684 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:37:07,709 - utils.performance_metrics - INFO - Started metrics tracking for filtered_read_accounts on MongoDB v7
+2025-06-06 09:37:07,709 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:37:10,873 - __main__ - INFO - v8: Completed 100 filtered reads in 3.19s (31.36 reads/s)
+2025-06-06 09:37:10,873 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:37:11,097 - __main__ - INFO - v7: Completed 100 filtered reads in 3.39s (29.52 reads/s)
+2025-06-06 09:37:11,097 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:37:14,119 - __main__ - INFO - v8: Completed 100 filtered reads in 3.24s (30.82 reads/s)
+2025-06-06 09:37:14,119 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:37:14,501 - __main__ - INFO - v7: Completed 100 filtered reads in 3.40s (29.38 reads/s)
+2025-06-06 09:37:14,501 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:37:17,349 - __main__ - INFO - v8: Completed 100 filtered reads in 3.23s (30.96 reads/s)
+2025-06-06 09:37:17,351 - utils.performance_metrics - INFO - Stopped metrics tracking for filtered_read_accounts on MongoDB v8
+2025-06-06 09:37:17,996 - __main__ - INFO - v7: Completed 100 filtered reads in 3.49s (28.61 reads/s)
+2025-06-06 09:37:17,997 - utils.performance_metrics - INFO - Stopped metrics tracking for filtered_read_accounts on MongoDB v7
+
+================================================================================
+Test: Filtered Read accounts
+--------------------------------------------------------------------------------
+MongoDB v7.0: 29.16 ops/s
+MongoDB v8.0: 31.04 ops/s
+Improvement: 6.44%
+================================================================================
+
+2025-06-06 09:37:17,999 - __main__ - INFO - Running complex_read_accounts test for MongoDB v7
+2025-06-06 09:37:18,000 - __main__ - INFO - Running complex_read_accounts test for MongoDB v8
+2025-06-06 09:37:18,039 - utils.performance_metrics - INFO - Started metrics tracking for complex_read_accounts on MongoDB v8
+2025-06-06 09:37:18,039 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:37:18,041 - utils.performance_metrics - INFO - Started metrics tracking for complex_read_accounts on MongoDB v7
+2025-06-06 09:37:18,041 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:37:21,379 - __main__ - INFO - v8: Completed 100 complex reads in 3.34s (29.94 reads/s)
+2025-06-06 09:37:21,380 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:37:21,578 - __main__ - INFO - v7: Completed 100 complex reads in 3.54s (28.28 reads/s)
+2025-06-06 09:37:21,578 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:37:25,031 - __main__ - INFO - v8: Completed 100 complex reads in 3.65s (27.39 reads/s)
+2025-06-06 09:37:25,031 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:37:25,322 - __main__ - INFO - v7: Completed 100 complex reads in 3.74s (26.71 reads/s)
+2025-06-06 09:37:25,322 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:37:28,443 - __main__ - INFO - v8: Completed 100 complex reads in 3.41s (29.31 reads/s)
+2025-06-06 09:37:28,444 - utils.performance_metrics - INFO - Stopped metrics tracking for complex_read_accounts on MongoDB v8
+2025-06-06 09:37:28,960 - __main__ - INFO - v7: Completed 100 complex reads in 3.64s (27.49 reads/s)
+2025-06-06 09:37:28,960 - utils.performance_metrics - INFO - Stopped metrics tracking for complex_read_accounts on MongoDB v7
+
+================================================================================
+Test: Complex Read accounts
+--------------------------------------------------------------------------------
+MongoDB v7.0: 27.48 ops/s
+MongoDB v8.0: 28.84 ops/s
+Improvement: 4.95%
+================================================================================
+
+2025-06-06 09:37:28,962 - __main__ - INFO - Running single_read_transactions test for MongoDB v7
+2025-06-06 09:37:28,962 - __main__ - INFO - Running single_read_transactions test for MongoDB v8
+2025-06-06 09:37:29,001 - utils.performance_metrics - INFO - Started metrics tracking for single_read_transactions on MongoDB v8
+2025-06-06 09:37:29,002 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:37:29,004 - utils.performance_metrics - INFO - Started metrics tracking for single_read_transactions on MongoDB v7
+2025-06-06 09:37:29,005 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:37:32,124 - __main__ - INFO - v8: Completed 100 single reads in 3.12s (32.03 reads/s)
+2025-06-06 09:37:32,126 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:37:32,320 - __main__ - INFO - v7: Completed 100 single reads in 3.31s (30.17 reads/s)
+2025-06-06 09:37:32,320 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:37:35,196 - __main__ - INFO - v8: Completed 100 single reads in 3.07s (32.58 reads/s)
+2025-06-06 09:37:35,196 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:37:35,652 - __main__ - INFO - v7: Completed 100 single reads in 3.33s (30.01 reads/s)
+2025-06-06 09:37:35,653 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:37:38,328 - __main__ - INFO - v8: Completed 100 single reads in 3.13s (31.92 reads/s)
+2025-06-06 09:37:38,329 - utils.performance_metrics - INFO - Stopped metrics tracking for single_read_transactions on MongoDB v8
+2025-06-06 09:37:38,997 - __main__ - INFO - v7: Completed 100 single reads in 3.34s (29.90 reads/s)
+2025-06-06 09:37:38,997 - utils.performance_metrics - INFO - Stopped metrics tracking for single_read_transactions on MongoDB v7
+
+================================================================================
+Test: Single Read transactions
+--------------------------------------------------------------------------------
+MongoDB v7.0: 30.03 ops/s
+MongoDB v8.0: 32.18 ops/s
+Improvement: 7.16%
+================================================================================
+
+2025-06-06 09:37:38,999 - __main__ - INFO - Running filtered_read_transactions test for MongoDB v7
+2025-06-06 09:37:39,000 - __main__ - INFO - Running filtered_read_transactions test for MongoDB v8
+2025-06-06 09:37:39,029 - utils.performance_metrics - INFO - Started metrics tracking for filtered_read_transactions on MongoDB v8
+2025-06-06 09:37:39,030 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:37:39,030 - utils.performance_metrics - INFO - Started metrics tracking for filtered_read_transactions on MongoDB v7
+2025-06-06 09:37:39,031 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:37:42,110 - __main__ - INFO - v8: Completed 100 filtered reads in 3.08s (32.46 reads/s)
+2025-06-06 09:37:42,111 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:37:42,301 - __main__ - INFO - v7: Completed 100 filtered reads in 3.27s (30.58 reads/s)
+2025-06-06 09:37:42,301 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:37:45,277 - __main__ - INFO - v8: Completed 100 filtered reads in 3.17s (31.59 reads/s)
+2025-06-06 09:37:45,277 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:37:45,594 - __main__ - INFO - v7: Completed 100 filtered reads in 3.29s (30.36 reads/s)
+2025-06-06 09:37:45,594 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:37:48,432 - __main__ - INFO - v8: Completed 100 filtered reads in 3.16s (31.70 reads/s)
+2025-06-06 09:37:48,432 - utils.performance_metrics - INFO - Stopped metrics tracking for filtered_read_transactions on MongoDB v8
+2025-06-06 09:37:48,919 - __main__ - INFO - v7: Completed 100 filtered reads in 3.32s (30.08 reads/s)
+2025-06-06 09:37:48,919 - utils.performance_metrics - INFO - Stopped metrics tracking for filtered_read_transactions on MongoDB v7
+
+================================================================================
+Test: Filtered Read transactions
+--------------------------------------------------------------------------------
+MongoDB v7.0: 30.34 ops/s
+MongoDB v8.0: 31.91 ops/s
+Improvement: 5.18%
+================================================================================
+
+2025-06-06 09:37:48,920 - __main__ - INFO - Running complex_read_transactions test for MongoDB v7
+2025-06-06 09:37:48,920 - __main__ - INFO - Running complex_read_transactions test for MongoDB v8
+2025-06-06 09:37:48,952 - utils.performance_metrics - INFO - Started metrics tracking for complex_read_transactions on MongoDB v8
+2025-06-06 09:37:48,952 - utils.performance_metrics - INFO - Started metrics tracking for complex_read_transactions on MongoDB v7
+2025-06-06 09:37:48,952 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:37:48,952 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:37:52,126 - __main__ - INFO - v8: Completed 100 complex reads in 3.17s (31.51 reads/s)
+2025-06-06 09:37:52,126 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:37:52,332 - __main__ - INFO - v7: Completed 100 complex reads in 3.38s (29.59 reads/s)
+2025-06-06 09:37:52,332 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:37:55,459 - __main__ - INFO - v8: Completed 100 complex reads in 3.33s (30.00 reads/s)
+2025-06-06 09:37:55,459 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:37:55,791 - __main__ - INFO - v7: Completed 100 complex reads in 3.46s (28.91 reads/s)
+2025-06-06 09:37:55,791 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:37:58,566 - __main__ - INFO - v8: Completed 100 complex reads in 3.11s (32.18 reads/s)
+2025-06-06 09:37:58,567 - utils.performance_metrics - INFO - Stopped metrics tracking for complex_read_transactions on MongoDB v8
+2025-06-06 09:37:59,208 - __main__ - INFO - v7: Completed 100 complex reads in 3.42s (29.27 reads/s)
+2025-06-06 09:37:59,208 - utils.performance_metrics - INFO - Stopped metrics tracking for complex_read_transactions on MongoDB v7
+
+================================================================================
+Test: Complex Read transactions
+--------------------------------------------------------------------------------
+MongoDB v7.0: 29.25 ops/s
+MongoDB v8.0: 31.21 ops/s
+Improvement: 6.67%
+================================================================================
+
+2025-06-06 09:37:59,209 - __main__ - INFO - Running single_read_loans test for MongoDB v7
+2025-06-06 09:37:59,209 - __main__ - INFO - Running single_read_loans test for MongoDB v8
+2025-06-06 09:37:59,245 - utils.performance_metrics - INFO - Started metrics tracking for single_read_loans on MongoDB v7
+2025-06-06 09:37:59,246 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:37:59,269 - utils.performance_metrics - INFO - Started metrics tracking for single_read_loans on MongoDB v8
+2025-06-06 09:37:59,269 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:38:02,826 - __main__ - INFO - v8: Completed 100 single reads in 3.56s (28.11 reads/s)
+2025-06-06 09:38:02,826 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:38:02,983 - __main__ - INFO - v7: Completed 100 single reads in 3.74s (26.77 reads/s)
+2025-06-06 09:38:02,983 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:38:06,568 - __main__ - INFO - v8: Completed 100 single reads in 3.74s (26.72 reads/s)
+2025-06-06 09:38:06,568 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:38:06,799 - __main__ - INFO - v7: Completed 100 single reads in 3.82s (26.21 reads/s)
+2025-06-06 09:38:06,799 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:38:10,244 - __main__ - INFO - v8: Completed 100 single reads in 3.68s (27.21 reads/s)
+2025-06-06 09:38:10,244 - utils.performance_metrics - INFO - Stopped metrics tracking for single_read_loans on MongoDB v8
+2025-06-06 09:38:10,589 - __main__ - INFO - v7: Completed 100 single reads in 3.79s (26.38 reads/s)
+2025-06-06 09:38:10,589 - utils.performance_metrics - INFO - Stopped metrics tracking for single_read_loans on MongoDB v7
+
+================================================================================
+Test: Single Read loans
+--------------------------------------------------------------------------------
+MongoDB v7.0: 26.45 ops/s
+MongoDB v8.0: 27.34 ops/s
+Improvement: 3.35%
+================================================================================
+
+2025-06-06 09:38:10,590 - __main__ - INFO - Running filtered_read_loans test for MongoDB v7
+2025-06-06 09:38:10,590 - __main__ - INFO - Running filtered_read_loans test for MongoDB v8
+2025-06-06 09:38:10,619 - utils.performance_metrics - INFO - Started metrics tracking for filtered_read_loans on MongoDB v8
+2025-06-06 09:38:10,619 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:38:10,619 - utils.performance_metrics - INFO - Started metrics tracking for filtered_read_loans on MongoDB v7
+2025-06-06 09:38:10,619 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:38:13,851 - __main__ - INFO - v8: Completed 100 filtered reads in 3.23s (30.94 reads/s)
+2025-06-06 09:38:13,851 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:38:14,108 - __main__ - INFO - v7: Completed 100 filtered reads in 3.49s (28.67 reads/s)
+2025-06-06 09:38:14,108 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:38:17,066 - __main__ - INFO - v8: Completed 100 filtered reads in 3.21s (31.13 reads/s)
+2025-06-06 09:38:17,067 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:38:17,471 - __main__ - INFO - v7: Completed 100 filtered reads in 3.36s (29.74 reads/s)
+2025-06-06 09:38:17,471 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:38:20,154 - __main__ - INFO - v8: Completed 100 filtered reads in 3.09s (32.39 reads/s)
+2025-06-06 09:38:20,154 - utils.performance_metrics - INFO - Stopped metrics tracking for filtered_read_loans on MongoDB v8
+2025-06-06 09:38:20,759 - __main__ - INFO - v7: Completed 100 filtered reads in 3.29s (30.41 reads/s)
+2025-06-06 09:38:20,759 - utils.performance_metrics - INFO - Stopped metrics tracking for filtered_read_loans on MongoDB v7
+
+================================================================================
+Test: Filtered Read loans
+--------------------------------------------------------------------------------
+MongoDB v7.0: 29.59 ops/s
+MongoDB v8.0: 31.48 ops/s
+Improvement: 6.38%
+================================================================================
+
+2025-06-06 09:38:20,761 - __main__ - INFO - Running complex_read_loans test for MongoDB v7
+2025-06-06 09:38:20,761 - __main__ - INFO - Running complex_read_loans test for MongoDB v8
+2025-06-06 09:38:20,794 - utils.performance_metrics - INFO - Started metrics tracking for complex_read_loans on MongoDB v8
+2025-06-06 09:38:20,795 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:38:20,796 - utils.performance_metrics - INFO - Started metrics tracking for complex_read_loans on MongoDB v7
+2025-06-06 09:38:20,797 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:38:26,062 - __main__ - INFO - v8: Completed 100 complex reads in 5.27s (18.98 reads/s)
+2025-06-06 09:38:26,063 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:38:27,372 - __main__ - INFO - v7: Completed 100 complex reads in 6.57s (15.21 reads/s)
+2025-06-06 09:38:27,372 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:38:30,670 - __main__ - INFO - v8: Completed 100 complex reads in 4.61s (21.70 reads/s)
+2025-06-06 09:38:30,671 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:38:33,239 - __main__ - INFO - v7: Completed 100 complex reads in 5.87s (17.05 reads/s)
+2025-06-06 09:38:33,239 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:38:36,013 - __main__ - INFO - v8: Completed 100 complex reads in 5.34s (18.72 reads/s)
+2025-06-06 09:38:36,013 - utils.performance_metrics - INFO - Stopped metrics tracking for complex_read_loans on MongoDB v8
+2025-06-06 09:38:39,033 - __main__ - INFO - v7: Completed 100 complex reads in 5.79s (17.26 reads/s)
+2025-06-06 09:38:39,033 - utils.performance_metrics - INFO - Stopped metrics tracking for complex_read_loans on MongoDB v7
+
+================================================================================
+Test: Complex Read loans
+--------------------------------------------------------------------------------
+MongoDB v7.0: 16.45 ops/s
+MongoDB v8.0: 19.71 ops/s
+Improvement: 19.83%
+================================================================================
+
+2025-06-06 09:38:39,033 - __main__ - INFO - Running simple_aggregation_customers test for MongoDB v7
+2025-06-06 09:38:39,033 - utils.performance_metrics - INFO - Started metrics tracking for simple_aggregation_customers on MongoDB v7
+2025-06-06 09:38:39,034 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:38:39,034 - __main__ - INFO - Running simple_aggregation_customers test for MongoDB v8
+2025-06-06 09:38:39,034 - utils.performance_metrics - INFO - Started metrics tracking for simple_aggregation_customers on MongoDB v8
+2025-06-06 09:38:39,034 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:38:40,126 - __main__ - INFO - v8: Completed 10 simple aggregations in 1.09s (9.16 aggs/s)
+2025-06-06 09:38:40,126 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:38:40,958 - __main__ - INFO - v7: Completed 10 simple aggregations in 1.92s (5.20 aggs/s)
+2025-06-06 09:38:40,958 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:38:41,179 - __main__ - INFO - v8: Completed 10 simple aggregations in 1.05s (9.55 aggs/s)
+2025-06-06 09:38:41,179 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:38:42,169 - __main__ - INFO - v8: Completed 10 simple aggregations in 0.99s (10.10 aggs/s)
+2025-06-06 09:38:42,169 - utils.performance_metrics - INFO - Stopped metrics tracking for simple_aggregation_customers on MongoDB v8
+2025-06-06 09:38:42,796 - __main__ - INFO - v7: Completed 10 simple aggregations in 1.84s (5.44 aggs/s)
+2025-06-06 09:38:42,796 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:38:44,652 - __main__ - INFO - v7: Completed 10 simple aggregations in 1.86s (5.39 aggs/s)
+2025-06-06 09:38:44,652 - utils.performance_metrics - INFO - Stopped metrics tracking for simple_aggregation_customers on MongoDB v7
+
+================================================================================
+Test: Simple Aggregation customers
+--------------------------------------------------------------------------------
+MongoDB v7.0: 5.34 ops/s
+MongoDB v8.0: 9.59 ops/s
+Improvement: 79.57%
+================================================================================
+
+2025-06-06 09:38:44,652 - __main__ - INFO - Running group_by_aggregation_customers test for MongoDB v7
+2025-06-06 09:38:44,652 - utils.performance_metrics - INFO - Started metrics tracking for group_by_aggregation_customers on MongoDB v7
+2025-06-06 09:38:44,652 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:38:44,653 - __main__ - INFO - Running group_by_aggregation_customers test for MongoDB v8
+2025-06-06 09:38:44,653 - utils.performance_metrics - INFO - Started metrics tracking for group_by_aggregation_customers on MongoDB v8
+2025-06-06 09:38:44,653 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:38:51,866 - __main__ - INFO - v8: Completed 10 group_by aggregations in 7.21s (1.39 aggs/s)
+2025-06-06 09:38:51,866 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:38:55,766 - __main__ - INFO - v7: Completed 10 group_by aggregations in 11.11s (0.90 aggs/s)
+2025-06-06 09:38:55,766 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:38:59,624 - __main__ - INFO - v8: Completed 10 group_by aggregations in 7.76s (1.29 aggs/s)
+2025-06-06 09:38:59,624 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:39:04,301 - __main__ - INFO - v7: Completed 10 group_by aggregations in 8.53s (1.17 aggs/s)
+2025-06-06 09:39:04,301 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:39:08,679 - __main__ - INFO - v8: Completed 10 group_by aggregations in 9.05s (1.10 aggs/s)
+2025-06-06 09:39:08,679 - utils.performance_metrics - INFO - Stopped metrics tracking for group_by_aggregation_customers on MongoDB v8
+2025-06-06 09:39:14,255 - __main__ - INFO - v7: Completed 10 group_by aggregations in 9.95s (1.00 aggs/s)
+2025-06-06 09:39:14,255 - utils.performance_metrics - INFO - Stopped metrics tracking for group_by_aggregation_customers on MongoDB v7
+
+================================================================================
+Test: Group_by Aggregation customers
+--------------------------------------------------------------------------------
+MongoDB v7.0: 1.01 ops/s
+MongoDB v8.0: 1.25 ops/s
+Improvement: 23.21%
+================================================================================
+
+2025-06-06 09:39:14,268 - __main__ - INFO - Running simple_aggregation_accounts test for MongoDB v7
+2025-06-06 09:39:14,268 - __main__ - INFO - Running simple_aggregation_accounts test for MongoDB v8
+2025-06-06 09:39:14,268 - utils.performance_metrics - INFO - Started metrics tracking for simple_aggregation_accounts on MongoDB v7
+2025-06-06 09:39:14,269 - utils.performance_metrics - INFO - Started metrics tracking for simple_aggregation_accounts on MongoDB v8
+2025-06-06 09:39:14,269 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:39:14,269 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:39:15,423 - __main__ - INFO - v8: Completed 10 simple aggregations in 1.15s (8.66 aggs/s)
+2025-06-06 09:39:15,423 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:39:16,432 - __main__ - INFO - v7: Completed 10 simple aggregations in 2.16s (4.62 aggs/s)
+2025-06-06 09:39:16,432 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:39:16,473 - __main__ - INFO - v8: Completed 10 simple aggregations in 1.05s (9.53 aggs/s)
+2025-06-06 09:39:16,474 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:39:17,498 - __main__ - INFO - v8: Completed 10 simple aggregations in 1.02s (9.76 aggs/s)
+2025-06-06 09:39:17,498 - utils.performance_metrics - INFO - Stopped metrics tracking for simple_aggregation_accounts on MongoDB v8
+2025-06-06 09:39:18,549 - __main__ - INFO - v7: Completed 10 simple aggregations in 2.12s (4.73 aggs/s)
+2025-06-06 09:39:18,549 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:39:20,641 - __main__ - INFO - v7: Completed 10 simple aggregations in 2.09s (4.78 aggs/s)
+2025-06-06 09:39:20,641 - utils.performance_metrics - INFO - Stopped metrics tracking for simple_aggregation_accounts on MongoDB v7
+
+================================================================================
+Test: Simple Aggregation accounts
+--------------------------------------------------------------------------------
+MongoDB v7.0: 4.71 ops/s
+MongoDB v8.0: 9.29 ops/s
+Improvement: 97.40%
+================================================================================
+
+2025-06-06 09:39:20,642 - __main__ - INFO - Running group_by_aggregation_accounts test for MongoDB v7
+2025-06-06 09:39:20,642 - utils.performance_metrics - INFO - Started metrics tracking for group_by_aggregation_accounts on MongoDB v7
+2025-06-06 09:39:20,642 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:39:20,642 - __main__ - INFO - Running group_by_aggregation_accounts test for MongoDB v8
+2025-06-06 09:39:20,644 - utils.performance_metrics - INFO - Started metrics tracking for group_by_aggregation_accounts on MongoDB v8
+2025-06-06 09:39:20,644 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:39:22,333 - __main__ - INFO - v8: Completed 10 group_by aggregations in 1.69s (5.92 aggs/s)
+2025-06-06 09:39:22,334 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:39:23,633 - __main__ - INFO - v7: Completed 10 group_by aggregations in 2.99s (3.34 aggs/s)
+2025-06-06 09:39:23,634 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:39:24,084 - __main__ - INFO - v8: Completed 10 group_by aggregations in 1.75s (5.71 aggs/s)
+2025-06-06 09:39:24,084 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:39:25,773 - __main__ - INFO - v8: Completed 10 group_by aggregations in 1.69s (5.92 aggs/s)
+2025-06-06 09:39:25,774 - utils.performance_metrics - INFO - Stopped metrics tracking for group_by_aggregation_accounts on MongoDB v8
+2025-06-06 09:39:26,605 - __main__ - INFO - v7: Completed 10 group_by aggregations in 2.97s (3.37 aggs/s)
+2025-06-06 09:39:26,605 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:39:29,576 - __main__ - INFO - v7: Completed 10 group_by aggregations in 2.97s (3.37 aggs/s)
+2025-06-06 09:39:29,577 - utils.performance_metrics - INFO - Stopped metrics tracking for group_by_aggregation_accounts on MongoDB v7
+
+================================================================================
+Test: Group_by Aggregation accounts
+--------------------------------------------------------------------------------
+MongoDB v7.0: 3.36 ops/s
+MongoDB v8.0: 5.85 ops/s
+Improvement: 74.20%
+================================================================================
+
+2025-06-06 09:39:29,578 - __main__ - INFO - Running simple_aggregation_transactions test for MongoDB v7
+2025-06-06 09:39:29,579 - __main__ - INFO - Running simple_aggregation_transactions test for MongoDB v8
+2025-06-06 09:39:29,579 - utils.performance_metrics - INFO - Started metrics tracking for simple_aggregation_transactions on MongoDB v8
+2025-06-06 09:39:29,579 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:39:29,579 - utils.performance_metrics - INFO - Started metrics tracking for simple_aggregation_transactions on MongoDB v7
+2025-06-06 09:39:29,580 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:39:37,907 - __main__ - INFO - v8: Completed 10 simple aggregations in 8.33s (1.20 aggs/s)
+2025-06-06 09:39:37,907 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:39:45,206 - __main__ - INFO - v8: Completed 10 simple aggregations in 7.30s (1.37 aggs/s)
+2025-06-06 09:39:45,207 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:39:47,610 - __main__ - INFO - v7: Completed 10 simple aggregations in 18.03s (0.55 aggs/s)
+2025-06-06 09:39:47,610 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:39:52,524 - __main__ - INFO - v8: Completed 10 simple aggregations in 7.32s (1.37 aggs/s)
+2025-06-06 09:39:52,524 - utils.performance_metrics - INFO - Stopped metrics tracking for simple_aggregation_transactions on MongoDB v8
+2025-06-06 09:40:04,598 - __main__ - INFO - v7: Completed 10 simple aggregations in 16.99s (0.59 aggs/s)
+2025-06-06 09:40:04,599 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:40:21,613 - __main__ - INFO - v7: Completed 10 simple aggregations in 17.01s (0.59 aggs/s)
+2025-06-06 09:40:21,613 - utils.performance_metrics - INFO - Stopped metrics tracking for simple_aggregation_transactions on MongoDB v7
+
+================================================================================
+Test: Simple Aggregation transactions
+--------------------------------------------------------------------------------
+MongoDB v7.0: 0.58 ops/s
+MongoDB v8.0: 1.31 ops/s
+Improvement: 126.79%
+================================================================================
+
+2025-06-06 09:40:21,614 - __main__ - INFO - Running group_by_aggregation_transactions test for MongoDB v7
+2025-06-06 09:40:21,614 - __main__ - INFO - Running group_by_aggregation_transactions test for MongoDB v8
+2025-06-06 09:40:21,615 - utils.performance_metrics - INFO - Started metrics tracking for group_by_aggregation_transactions on MongoDB v8
+2025-06-06 09:40:21,615 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:40:21,615 - utils.performance_metrics - INFO - Started metrics tracking for group_by_aggregation_transactions on MongoDB v7
+2025-06-06 09:40:21,616 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:40:35,398 - __main__ - INFO - v8: Completed 10 group_by aggregations in 13.78s (0.73 aggs/s)
+2025-06-06 09:40:35,398 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:40:47,452 - __main__ - INFO - v7: Completed 10 group_by aggregations in 25.84s (0.39 aggs/s)
+2025-06-06 09:40:47,452 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:40:49,146 - __main__ - INFO - v8: Completed 10 group_by aggregations in 13.75s (0.73 aggs/s)
+2025-06-06 09:40:49,147 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:41:02,957 - __main__ - INFO - v8: Completed 10 group_by aggregations in 13.81s (0.72 aggs/s)
+2025-06-06 09:41:02,957 - utils.performance_metrics - INFO - Stopped metrics tracking for group_by_aggregation_transactions on MongoDB v8
+2025-06-06 09:41:13,603 - __main__ - INFO - v7: Completed 10 group_by aggregations in 26.15s (0.38 aggs/s)
+2025-06-06 09:41:13,603 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:41:39,579 - __main__ - INFO - v7: Completed 10 group_by aggregations in 25.98s (0.38 aggs/s)
+2025-06-06 09:41:39,580 - utils.performance_metrics - INFO - Stopped metrics tracking for group_by_aggregation_transactions on MongoDB v7
+
+================================================================================
+Test: Group_by Aggregation transactions
+--------------------------------------------------------------------------------
+MongoDB v7.0: 0.38 ops/s
+MongoDB v8.0: 0.73 ops/s
+Improvement: 88.59%
+================================================================================
+
+2025-06-06 09:41:39,582 - __main__ - INFO - Running simple_aggregation_loans test for MongoDB v7
+2025-06-06 09:41:39,582 - __main__ - INFO - Running simple_aggregation_loans test for MongoDB v8
+2025-06-06 09:41:39,583 - utils.performance_metrics - INFO - Started metrics tracking for simple_aggregation_loans on MongoDB v7
+2025-06-06 09:41:39,583 - utils.performance_metrics - INFO - Started metrics tracking for simple_aggregation_loans on MongoDB v8
+2025-06-06 09:41:39,583 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:41:39,583 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:41:48,115 - __main__ - INFO - v8: Completed 10 simple aggregations in 8.53s (1.17 aggs/s)
+2025-06-06 09:41:48,115 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:41:50,192 - __main__ - INFO - v7: Completed 10 simple aggregations in 10.61s (0.94 aggs/s)
+2025-06-06 09:41:50,192 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:41:52,613 - __main__ - INFO - v8: Completed 10 simple aggregations in 4.50s (2.22 aggs/s)
+2025-06-06 09:41:52,613 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:41:56,813 - __main__ - INFO - v7: Completed 10 simple aggregations in 6.62s (1.51 aggs/s)
+2025-06-06 09:41:56,813 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:41:57,661 - __main__ - INFO - v8: Completed 10 simple aggregations in 5.05s (1.98 aggs/s)
+2025-06-06 09:41:57,661 - utils.performance_metrics - INFO - Stopped metrics tracking for simple_aggregation_loans on MongoDB v8
+2025-06-06 09:42:03,382 - __main__ - INFO - v7: Completed 10 simple aggregations in 6.57s (1.52 aggs/s)
+2025-06-06 09:42:03,382 - utils.performance_metrics - INFO - Stopped metrics tracking for simple_aggregation_loans on MongoDB v7
+
+================================================================================
+Test: Simple Aggregation loans
+--------------------------------------------------------------------------------
+MongoDB v7.0: 1.26 ops/s
+MongoDB v8.0: 1.66 ops/s
+Improvement: 31.65%
+================================================================================
+
+2025-06-06 09:42:03,382 - __main__ - INFO - Running group_by_aggregation_loans test for MongoDB v7
+2025-06-06 09:42:03,382 - utils.performance_metrics - INFO - Started metrics tracking for group_by_aggregation_loans on MongoDB v7
+2025-06-06 09:42:03,383 - __main__ - INFO - Iteration 1/3 for v7
+2025-06-06 09:42:03,383 - __main__ - INFO - Running group_by_aggregation_loans test for MongoDB v8
+2025-06-06 09:42:03,383 - utils.performance_metrics - INFO - Started metrics tracking for group_by_aggregation_loans on MongoDB v8
+2025-06-06 09:42:03,383 - __main__ - INFO - Iteration 1/3 for v8
+2025-06-06 09:42:07,772 - __main__ - INFO - v8: Completed 10 group_by aggregations in 4.39s (2.28 aggs/s)
+2025-06-06 09:42:07,772 - __main__ - INFO - Iteration 2/3 for v8
+2025-06-06 09:42:10,751 - __main__ - INFO - v7: Completed 10 group_by aggregations in 7.37s (1.36 aggs/s)
+2025-06-06 09:42:10,752 - __main__ - INFO - Iteration 2/3 for v7
+2025-06-06 09:42:12,702 - __main__ - INFO - v8: Completed 10 group_by aggregations in 4.93s (2.03 aggs/s)
+2025-06-06 09:42:12,702 - __main__ - INFO - Iteration 3/3 for v8
+2025-06-06 09:42:16,946 - __main__ - INFO - v8: Completed 10 group_by aggregations in 4.24s (2.36 aggs/s)
+2025-06-06 09:42:16,947 - utils.performance_metrics - INFO - Stopped metrics tracking for group_by_aggregation_loans on MongoDB v8
+2025-06-06 09:42:17,621 - __main__ - INFO - v7: Completed 10 group_by aggregations in 6.87s (1.46 aggs/s)
+2025-06-06 09:42:17,621 - __main__ - INFO - Iteration 3/3 for v7
+2025-06-06 09:42:25,039 - __main__ - INFO - v7: Completed 10 group_by aggregations in 7.42s (1.35 aggs/s)
+2025-06-06 09:42:25,039 - utils.performance_metrics - INFO - Stopped metrics tracking for group_by_aggregation_loans on MongoDB v7
+
+================================================================================
+Test: Group_by Aggregation loans
+--------------------------------------------------------------------------------
+MongoDB v7.0: 1.39 ops/s
+MongoDB v8.0: 2.21 ops/s
+Improvement: 59.67%
+================================================================================
+
+
+Test Summary:
+--------------------------------------------------------------------------------
+Total tests run: 32
+HTML report: performance_comparison_report/report.html
+2025-06-06 09:42:25,909 - utils.monitoring - INFO - Resource monitoring stopped
+Closing connection to MongoDB v8
+Closing connection to MongoDB v7

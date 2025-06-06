@@ -85,8 +85,12 @@ class ResourceMonitor:
             time_diff = current_time - prev_time
             
             # Calculate rates (bytes/sec)
-            disk_read_rate = (disk_io.read_bytes - prev_disk_io.read_bytes) / time_diff
-            disk_write_rate = (disk_io.write_bytes - prev_disk_io.write_bytes) / time_diff
+            if time_diff > 0:
+                disk_read_rate = (disk_io.read_bytes - prev_disk_io.read_bytes) / time_diff
+                disk_write_rate = (disk_io.write_bytes - prev_disk_io.write_bytes) / time_diff
+            else:
+                disk_read_rate = 0
+                disk_write_rate = 0
             
             self.disk_io.append({
                 "read_bytes": disk_io.read_bytes,
@@ -99,8 +103,12 @@ class ResourceMonitor:
             net_io = psutil.net_io_counters()
             
             # Calculate rates (bytes/sec)
-            net_recv_rate = (net_io.bytes_recv - prev_net_io.bytes_recv) / time_diff
-            net_sent_rate = (net_io.bytes_sent - prev_net_io.bytes_sent) / time_diff
+            if time_diff > 0:
+                net_recv_rate = (net_io.bytes_recv - prev_net_io.bytes_recv) / time_diff
+                net_sent_rate = (net_io.bytes_sent - prev_net_io.bytes_sent) / time_diff
+            else:
+                net_recv_rate = 0
+                net_sent_rate = 0
             
             self.network_io.append({
                 "bytes_recv": net_io.bytes_recv,
@@ -427,3 +435,218 @@ def monitor_mongodb_processes(interval: float = 5.0, duration: float = 60.0) -> 
         time.sleep(interval)
     
     return pd.DataFrame(data)
+
+
+class PerformanceMetrics:
+    """Class for tracking performance metrics of MongoDB operations."""
+    
+    def __init__(self, test_name: str, version: str):
+        """
+        Initialize a new PerformanceMetrics instance.
+        
+        Args:
+            test_name (str): Name of the test
+            version (str): MongoDB version
+        """
+        self.test_name = test_name
+        self.version = version
+        self.start_time = None
+        self.end_time = None
+        self.response_times = []
+        self.operations = {
+            "insert": 0,
+            "find": 0,
+            "update": 0,
+            "delete": 0,
+            "aggregate": 0,
+            "other": 0
+        }
+        self.resource_monitor = ResourceMonitor()
+    
+    def start(self) -> None:
+        """Start collecting metrics."""
+        self.start_time = time.time()
+        self.resource_monitor.start()
+        logger.info(f"Started metrics collection for {self.test_name} on MongoDB {self.version}")
+    
+    def stop(self) -> None:
+        """Stop collecting metrics."""
+        self.end_time = time.time()
+        self.resource_monitor.stop()
+        logger.info(f"Stopped metrics collection for {self.test_name} on MongoDB {self.version}")
+    
+    def record_response_time(self, response_time: float) -> None:
+        """
+        Record a response time.
+        
+        Args:
+            response_time (float): Response time in seconds
+        """
+        self.response_times.append(response_time)
+    
+    def record_operation(self, operation_type: str, count: int = 1) -> None:
+        """
+        Record an operation.
+        
+        Args:
+            operation_type (str): Type of operation
+            count (int): Number of operations
+        """
+        if operation_type in self.operations:
+            self.operations[operation_type] += count
+        else:
+            self.operations["other"] += count
+    
+    def get_total_operations(self) -> int:
+        """
+        Get the total number of operations.
+        
+        Returns:
+            int: Total number of operations
+        """
+        return sum(self.operations.values())
+    
+    def get_total_time(self) -> float:
+        """
+        Get the total time elapsed.
+        
+        Returns:
+            float: Total time in seconds
+        """
+        if self.start_time is None:
+            return 0.0
+        
+        end_time = self.end_time if self.end_time is not None else time.time()
+        return end_time - self.start_time
+    
+    def get_throughput(self) -> float:
+        """
+        Get the throughput (operations per second).
+        
+        Returns:
+            float: Throughput in operations per second
+        """
+        total_time = self.get_total_time()
+        if total_time == 0:
+            return 0.0
+        
+        return self.get_total_operations() / total_time
+    
+    def get_response_time_stats(self) -> Dict[str, float]:
+        """
+        Get response time statistics.
+        
+        Returns:
+            Dict[str, float]: Response time statistics
+        """
+        if not self.response_times:
+            return {
+                "min": 0.0,
+                "max": 0.0,
+                "avg": 0.0,
+                "p50": 0.0,
+                "p90": 0.0,
+                "p95": 0.0,
+                "p99": 0.0
+            }
+        
+        # Calculate percentiles
+        sorted_times = sorted(self.response_times)
+        p50_idx = int(len(sorted_times) * 0.5)
+        p90_idx = int(len(sorted_times) * 0.9)
+        p95_idx = int(len(sorted_times) * 0.95)
+        p99_idx = int(len(sorted_times) * 0.99)
+        
+        return {
+            "min": min(self.response_times),
+            "max": max(self.response_times),
+            "avg": sum(self.response_times) / len(self.response_times),
+            "p50": sorted_times[p50_idx],
+            "p90": sorted_times[p90_idx],
+            "p95": sorted_times[p95_idx],
+            "p99": sorted_times[p99_idx]
+        }
+    
+    def get_summary(self) -> Dict[str, Any]:
+        """
+        Get a summary of all metrics.
+        
+        Returns:
+            Dict[str, Any]: Summary of all metrics
+        """
+        return {
+            "test_name": self.test_name,
+            "version": self.version,
+            "total_time": self.get_total_time(),
+            "total_operations": self.get_total_operations(),
+            "throughput": self.get_throughput(),
+            "operations": self.operations,
+            "response_time": self.get_response_time_stats(),
+            "resources": self.resource_monitor.get_summary()
+        }
+    
+    def to_dataframe(self) -> Dict[str, pd.DataFrame]:
+        """
+        Convert metrics to pandas DataFrames.
+        
+        Returns:
+            Dict[str, pd.DataFrame]: Dictionary of DataFrames
+        """
+        dfs = {}
+        
+        # Response times
+        if self.response_times:
+            dfs["response_times"] = pd.DataFrame({
+                "response_time": self.response_times
+            })
+        
+        # Operations
+        dfs["operations"] = pd.DataFrame({
+            "operation_type": list(self.operations.keys()),
+            "count": list(self.operations.values())
+        })
+        
+        # Resource monitoring
+        resource_dfs = self.resource_monitor.to_dataframe()
+        for name, df in resource_dfs.items():
+            dfs[f"resource_{name}"] = df
+        
+        return dfs
+    
+    def save_to_csv(self, output_dir: str, prefix: str = "") -> Dict[str, str]:
+        """
+        Save metrics to CSV files.
+        
+        Args:
+            output_dir (str): Output directory
+            prefix (str): Prefix for file names
+            
+        Returns:
+            Dict[str, str]: Dictionary with file paths
+        """
+        import os
+        
+        # Create output directory if it doesn't exist
+        os.makedirs(output_dir, exist_ok=True)
+        
+        file_paths = {}
+        dfs = self.to_dataframe()
+        
+        for name, df in dfs.items():
+            file_name = f"{prefix}_{name}.csv" if prefix else f"{name}.csv"
+            file_path = os.path.join(output_dir, file_name)
+            df.to_csv(file_path, index=False)
+            file_paths[name] = file_path
+        
+        # Save summary as JSON
+        import json
+        summary = self.get_summary()
+        summary_file_name = f"{prefix}_summary.json" if prefix else "summary.json"
+        summary_file_path = os.path.join(output_dir, summary_file_name)
+        
+        with open(summary_file_path, "w") as f:
+            json.dump(summary, f, indent=2, default=str)
+        
+        file_paths["summary"] = summary_file_path
+        
+        return file_paths
