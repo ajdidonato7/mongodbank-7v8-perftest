@@ -53,13 +53,56 @@ pip install -r requirements.txt
 
 ## Usage
 
-### Basic Usage
+### Side-by-Side Version Comparison
+
+For direct visual comparison of MongoDB v7.0 and v8.0 performance, use the `compare_versions.py` script:
+
+```
+python compare_versions.py --all
+```
+
+This script runs tests for both MongoDB versions in parallel and provides a real-time visual comparison. Key features:
+
+- **Parallel Testing**: Runs each test on both versions simultaneously for direct comparison
+- **Real-time Results**: Shows performance metrics as tests complete
+- **Interactive HTML Report**: Generates a comprehensive visual report with charts
+- **Flexible Test Selection**: Choose which tests to run with command-line options
+
+#### Basic Usage
 
 Run all tests with default settings:
+```
+python compare_versions.py --all
+```
 
+Run specific test types:
 ```
-python main.py
+python compare_versions.py --bulk-insert --read
 ```
+
+Customize test parameters:
+```
+python compare_versions.py --bulk-insert --collections customers accounts --batch-sizes 100 1000
+```
+
+Enable live plotting and automatically open the HTML report:
+```
+python compare_versions.py --bulk-insert --live-plot --open-report
+```
+
+#### Available Options
+
+- `--bulk-insert`: Run bulk insert tests
+- `--read`: Run read tests
+- `--aggregation`: Run aggregation tests
+- `--all`: Run all tests
+- `--collections`: Specify collections to test (default: all)
+- `--batch-sizes`: Specify batch sizes for bulk insert tests
+- `--read-types`: Specify read types (single, filtered, complex)
+- `--agg-types`: Specify aggregation types (simple, group-by)
+- `--iterations`: Set number of iterations per test
+- `--live-plot`: Show live plot during tests
+- `--open-report`: Open HTML report after tests complete
 
 ### Load Test Data
 
@@ -67,6 +110,14 @@ Load initial test data before running tests:
 
 ```
 python main.py --load-data --customer-count 10000
+```
+
+### Basic Usage
+
+Run all tests with default settings:
+
+```
+python main.py
 ```
 
 ### Run Specific Tests
@@ -116,8 +167,6 @@ Specify output directory and report formats:
 ```
 python main.py --output-dir ./my-reports --report-formats json,html
 ```
-
-### Side-by-Side Version Comparison
 
 For direct visual comparison of MongoDB v7.0 and v8.0 performance, use the `compare_versions.py` script:
 
